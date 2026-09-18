@@ -1,0 +1,59 @@
+﻿l_simp_chinese:
+ # 强化基础公司
+ company_global_automotive_industries: "全球汽车工业集团"
+ company_global_automotive_industries_desc: "由亨利·福特和卡尔·本茨创办的全球性汽车制造企业，专注于高端汽车、发动机和橡胶产品的生产。"
+
+ company_international_commercial_group: "国际商业集团"
+ company_international_commercial_group_desc: "由约翰·沃纳梅克和马歇尔·菲尔德创办的全国性零售连锁企业，提供高端制服、精致食品和优质咖啡。"
+
+ company_global_construction_group: "环球建设集团"
+ company_global_construction_group_desc: "由古斯塔夫·埃菲尔和安德鲁·卡内基创办的国际性房地产企业，专注于强化玻璃和不锈钢的生产。"
+
+ company_military_industrial_complex: "军工联合体"
+ company_military_industrial_complex_desc: "由阿尔弗雷德·克虏伯和塞缪尔·柯尔特创办的专业武器制造企业，生产自动步枪和C4炸药。"
+
+ company_petrochemical_giant: "石油化工巨头"
+ company_petrochemical_giant_desc: "由约翰·D·洛克菲勒和路德维希·诺贝尔创办的先进石油精炼企业，提供高品质的精炼石油产品。"
+
+ company_international_financial_group: "国际金融集团"
+ company_international_financial_group_desc: "由J·P·摩根和内森·罗斯柴尔德创办的国家级金融机构，提供全面的银行服务和金融支持。"
+
+ company_tech_industrial_group: "科技工业集团"
+ company_tech_industrial_group_desc: "由托马斯·爱迪生和古列尔莫·马可尼创办的专业工业和信息化咨询企业，提供电力和无线电产品。"
+
+ # 名贵商品
+ prestige_good_benz_automobiles: "奔驰汽车"
+ prestige_good_benz_engines: "奔驰发动机"
+ prestige_good_michelin_rubber: "米其林橡胶"
+ prestige_good_savile_row_suits: "萨维尔街西装"
+ prestige_good_campbell_soup: "坎贝尔汤品"
+ prestige_good_blue_mountain_coffee: "蓝山咖啡"
+ prestige_good_tiffany_glass: "蒂芙尼玻璃"
+ prestige_good_krupp_steel: "克虏伯钢铁"
+ prestige_good_mauser_rifles: "毛瑟步枪"
+ prestige_good_nobel_explosives: "诺贝尔炸药"
+ prestige_good_standard_oil: "标准石油"
+ prestige_good_acid_free_paper: "无酸纸"
+ prestige_good_swiss_tools: "瑞士工具"
+ prestige_good_edison_electricity: "爱迪生电力"
+ prestige_good_marconi_radio: "马可尼无线电"
+ prestige_good_prr_quick_transport: "高速铁路"
+ prestige_good_liquor_rum: "朗姆酒"
+ prestige_good_baltimore_clippers: "巴尔的摩快帆船"
+ prestige_good_blackwell_frigates: "布莱克维尔巡防舰"
+ prestige_good_winchester_ammunition: "温彻斯特弹药"
+ prestige_good_siberian_pine: "西伯利亚松木"
+
+ # 矿物冶炼集团
+ company_mineral_smelting_corporation: "矿物冶炼集团"
+ company_mineral_smelting_corporation_desc: "由唐廷枢和约翰·D·洛克菲勒创办的综合性矿物冶炼企业，专注于高品质铁矿、煤炭、硫矿和铅矿的开采与冶炼。"
+
+ # 矿物冶炼名贵商品
+ prestige_good_ural_iron: "乌拉尔铁矿"
+ prestige_good_rio_tinto_sulfur: "力拓硫矿"
+ prestige_good_broken_hill_lead: "布罗肯希尔铅矿"
+ prestige_good_silesian_coal: "西里西亚煤炭"
+
+ # MTM 陆海机械制造厂
+ company_la_maquinista_terrestre_y_maritima: "MTM 陆海机械制造厂"
+ company_la_maquinista_terrestre_y_maritima_desc: "一家总部位于西班牙的重型机械制造公司，专门生产机车、海军舰艇和工业设备。"

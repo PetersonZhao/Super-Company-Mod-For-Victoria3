@@ -1,0 +1,177 @@
+﻿# 强化基础公司名贵商品
+
+# 梅赛德斯汽车 - 汽车变体
+prestige_good_benz_automobiles = {
+	base_good = automobiles
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_benz_automobiles.dds"
+}
+
+# 奔驰发动机 - 发动机变体
+prestige_good_benz_engines = {
+	base_good = engines
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_benz_engines.dds"
+}
+
+# 米其林橡胶 - 橡胶变体
+prestige_good_michelin_rubber = {
+	base_good = rubber
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_michelin_rubber.dds"
+}
+
+# 萨维尔街西装 - 衣物变体
+prestige_good_savile_row_suits = {
+	base_good = luxury_clothes
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_savile_row_suits.dds"
+}
+
+# 坎贝尔汤品 - 杂货变体
+prestige_good_campbell_soup = {
+	base_good = groceries
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_campbell_soup.dds"
+}
+
+# 蓝山咖啡 - 咖啡变体
+prestige_good_blue_mountain_coffee = {
+	base_good = coffee
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_blue_mountain_coffee.dds"
+}
+
+# 蒂芙尼玻璃 - 玻璃变体
+prestige_good_tiffany_glass = {
+	base_good = glass
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_tiffany_glass.dds"
+}
+
+# 克虏伯钢铁 - 钢铁变体
+prestige_good_krupp_steel = {
+	base_good = steel
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_krupp_steel.dds"
+}
+
+# 毛瑟步枪 - 轻武器变体
+prestige_good_mauser_rifles = {
+	base_good = small_arms
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_mauser_rifles.dds"
+}
+
+# 诺贝尔炸药 - 炸药变体
+prestige_good_nobel_explosives = {
+	base_good = explosives
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_nobel_explosives.dds"
+}
+
+# 标准石油 - 石油变体
+prestige_good_standard_oil = {
+	base_good = oil
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/SOC_crown_oil.dds"
+}
+
+# 无酸纸 - 纸张变体
+prestige_good_acid_free_paper = {
+	base_good = paper
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_acid_free_paper.dds"
+}
+
+# 瑞士工具 - 工具变体
+prestige_good_swiss_tools = {
+	base_good = tools
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/victorinox.dds"
+}
+
+# 爱迪生电力 - 电力变体
+prestige_good_edison_electricity = {
+	base_good = electricity
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_edison_electricity.dds"
+}
+
+# 马可尼无线电 - 无线电变体
+prestige_good_marconi_radio = {
+	base_good = radios
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_marconi_radio.dds"
+}
+
+# 乌拉尔铁矿 - 铁矿变体
+prestige_good_ural_iron = {
+	base_good = iron
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_ural_iron.dds"
+}
+
+# 西里西亚煤炭 - 煤炭变体
+prestige_good_silesian_coal = {
+	base_good = coal
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_silesian_coal.dds"
+}
+
+# 力拓硫矿 - 硫矿变体
+prestige_good_rio_tinto_sulfur = {
+	base_good = sulfur
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_rio_tinto_sulfur.dds"
+}
+
+# 布罗肯希尔铅矿 - 铅矿变体
+prestige_good_broken_hill_lead = {
+	base_good = lead
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_broken_hill_lead.dds"
+}
+
+# 高速铁路 - 运力变体
+prestige_good_prr_quick_transport = {
+	base_good = transportation
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/PRR_quick_transport.dds"
+}
+
+# 朗姆酒 - 烈酒变体
+prestige_good_liquor_rum = {
+	base_good = liquor
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/rum.dds"
+}
+
+# 巴尔的摩快帆船 - 帆船变体
+prestige_good_baltimore_clippers = {
+	base_good = clippers
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/Baltimore_clipper.dds"
+}
+
+# 布莱克维尔巡防舰 - 风帆战舰变体
+prestige_good_blackwell_frigates = {
+	base_good = manowars
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/Blackwall_frigate.dds"
+}
+
+# 温彻斯特弹药 - 弹药变体
+prestige_good_winchester_ammunition = {
+	base_good = ammunition
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/winchester_ammo.dds"
+}
+
+# 西伯利亚红松木 - 木材变体
+prestige_good_siberian_pine = {
+	base_good = wood
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/siberian_pine.dds"
+}
+

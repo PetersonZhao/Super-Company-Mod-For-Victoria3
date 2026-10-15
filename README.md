@@ -1,72 +1,39 @@
-# Stronger Basic Companies / 强化基础公司 / Усиленные Базовые Компании
+# Super Company / 超级公司
 
-A meticulously crafted Victoria 3 mod that adds 8 powerful new basic companies to the game, each with unique prestige goods and powerful economic bonuses.
+面向 Victoria 3 1.13 的高强度公司模组。模组提供 8 家职责清晰、产业链互补的玩家专属公司；它们依然明显超模，但不再依靠重复叠层和爆量单点供应。
 
-一个为维多利亚3精心设计的模组，为游戏添加了8个全新的强力基础公司，每个公司都拥有独特的名贵商品和强大的经济加成效果。
+An intentionally overpowered company mod for Victoria 3 1.13. It provides eight player-only companies with distinct, complementary industrial-chain roles.
 
-Тщательно созданный мод для Victoria 3, который добавляет в игру 8 мощных новых базовых компаний, каждая из которых имеет уникальные престижные товары и мощные экономические бонусы.
+## 设计目标
 
----
+- 8 家公司覆盖资源、基础工业、建设、消费、军工、能源、科研和金融。
+- 保持高强度：核心产业通常获得 +100% 至 +250% 吞吐量，战略加成保持显著。
+- 缓解短缺而不是消灭市场：上游资源加成高于下游，但移除了旧版 +500% 至 +800% 的爆量值。
+- 避免同一建筑同时获得“建筑群 + 单体建筑”双重吞吐叠加。
+- 所有公司均为玩家专属：`ai_will_do = { always = no }`。
 
-## 📖 Read Documentation / 阅读文档 / Читать Документацию
+## 公司分工
 
-- **[English](README_EN.md)** - Full documentation in English
-- **[中文](README_CN.md)** - 完整中文文档
-- **[Русский](README_RU.md)** - Полная документация на русском языке
+| 公司 | 产业链职责 |
+|---|---|
+| 全球汽车工业集团 | 橡胶 → 发动机 → 汽车 |
+| 国际商业集团 | 农牧渔业 → 食品/纺织；港口与商船物流 |
+| 环球建设集团 | 钢铁、玻璃、炸药、家具 → 建设施工 |
+| 军工联合体 | 轻武器、火炮、弹药、军用造船 |
+| 石油化工巨头 | 石油 → 化工/合成材料；铁路运输 |
+| 国际金融集团 | 木材 → 纸张/工具；金融与投资 |
+| 科技工业集团 | 电力 → 电气；大学、创新与行政能力 |
+| 全球矿业资源集团 | 铁、煤、铅、硫、黄金等矿产上游 |
 
----
+## 兼容性
 
-## 🚀 Quick Start / 快速开始 / Быстрый Старт
+- 目标版本：Victoria 3 1.13.11（元数据使用 `1.13.*`）。
+- 本版本不再覆盖原版 goods 定义，因此与修改商品、运输力、电力和生活需求的模组更容易共存。
+- 本模组仍定义公司类型和自有声望商品；与修改相同 company key 或 prestige-good key 的模组会发生覆盖冲突。
+- 2.0.0 删除了旧 MTM 公司且不提供旧存档兼容壳，建议开始新游戏。
 
-### Steam Workshop Installation / Steam创意工坊安装 / Установка через Steam Workshop
+## 安装
 
-1. Subscribe to the mod on Steam Workshop / 在Steam创意工坊订阅本模组 / Подпишитесь на мод в Steam Workshop
-2. Enable "Stronger Basic Companies" in your playset / 在您的playset中启用"Stronger Basic Companies" / Включите "Stronger Basic Companies" в вашем наборе модов
-3. Start a new game or load an existing save / 开始新游戏或加载现有存档 / Начните новую игру или загрузите существующее сохранение
+将模组加入播放集并启用，然后开始新游戏。所有公司需要对应技术，且至少一个相关核心建筑在同一州达到 5 级。
 
----
-
-## 🏢 Featured Companies / 特色公司 / Особые Компании
-
-- **Global Automotive Industries** / 全球汽车工业集团 / Глобальная Автомобильная Промышленность
-- **International Commercial Group** / 国际商业集团 / Международная Коммерческая Группа
-- **Global Construction Group** / 环球建设集团 / Глобальная Строительная Группа
-- **Military Industrial Complex** / 军工联合体 / Военно-Промышленный Комплекс
-- **Petrochemical Giant** / 石油化工巨头 / Нефтехимический Гигант
-- **International Financial Group** / 国际金融集团 / Международная Финансовая Группа
-- **Tech Industrial Group** / 科技工业集团 / Технологическая Промышленная Группа
-- **Mineral Smelting Corporation** / 矿物冶炼集团 / Корпорация Минеральной Плавки
-
----
-
-## ⚖️ Game Balance / 游戏平衡 / Игровой Баланс
-
-- **Late-Game Companies** / 后期公司 / Позднеигровые Компании
-- **Balanced Bonuses** / 平衡加成 / Сбалансированные Бонусы
-- **AI-Friendly** / AI友好 / Дружественный ИИ
-- **Multi-Language Support** / 多语言支持 / Многоязычная Поддержка
-
----
-
-## 🔧 Compatibility / 兼容性 / Совместимость
-
-- **Game Version**: Victoria 3 1.9.8 / 游戏版本: 维多利亚3 1.9.8 / Версия Игры: Victoria 3 1.9.8
-- **Mod Compatibility**: Compatible with most other mods / 模组兼容: 与大多数其他模组兼容 / Совместимость Модов: Совместим с большинством других модов
-
----
-
-## 💬 Feedback & Support / 反馈与支持 / Обратная Связь и Поддержка
-
-> **Note / 注意 / Примечание**: This mod uses AI-generated content. If you find any errors, please report them! / 本模组使用AI生成内容。如果您发现任何错误，请报告！ / Этот мод использует контент, созданный ИИ. Если вы найдете ошибки, пожалуйста, сообщите о них!
-
----
-
-**Enjoy your Victoria 3 gaming experience! / 享受您的维多利亚3游戏体验！ / Наслаждайтесь игрой в Victoria 3!**
-
-
-
-
-
-
-
-
+完整数值参见 [公司效果详解.md](公司效果详解.md)，版本变更参见 [CHANGELOG.md](CHANGELOG.md)。

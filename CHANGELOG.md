@@ -1,4 +1,19 @@
-# Stronger Basic Companies - Changelog
+# Super Company - Changelog
+
+## Version 2.0.0 - Victoria 3 1.13 Rebalance
+
+- Consolidated the roster to eight companies, renamed the mining company's internal key to match its role, and removed MTM without a legacy-save compatibility shell.
+- Redistributed MTM's useful engine, shipbuilding, port, innovation, military-tech, company-slot, and Industrialist bonuses by company role.
+- Rebuilt the industrial ratios so upstream resources remain stronger than processing and downstream production, while reducing old +500% to +800% supply spikes.
+- Removed duplicate group-and-building throughput stacking.
+- Replaced obsolete building and modifier keys with Victoria 3 1.13 equivalents, including the singular furniture, steel mill, and shipyard modifier names.
+- Removed the full vanilla goods override, restoring current vanilla goods, electricity, transportation, obsession, and convoy rules.
+- Removed prestige goods based on deprecated `manowars`/`ironclads`, fixed the Marconi radio texture path, and repaired multilingual localization encoding.
+- Updated metadata and documentation for Victoria 3 1.13.11.
+- Reworked railways from +125% throughput into a scale-and-profit model: +25% railway throughput, +100% infrastructure construction efficiency, and -75% infrastructure employee requirements.
+- Moved the International Financial Group unlock from the late-game Investment Banks technology to Central Banking.
+
+---
 
 ## Version 1.1.0 - Prestige Goods Trigger Fix
 

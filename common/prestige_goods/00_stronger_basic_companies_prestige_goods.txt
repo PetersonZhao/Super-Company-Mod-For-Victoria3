@@ -21,7 +21,7 @@ prestige_good_michelin_rubber = {
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_michelin_rubber.dds"
 }
 
-# 萨维尔街西装 - 衣物变体
+# 京都和服 - 高档衣物变体
 prestige_good_savile_row_suits = {
 	base_good = luxury_clothes
 	prestige_bonus = 0.1
@@ -49,13 +49,6 @@ prestige_good_tiffany_glass = {
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_tiffany_glass.dds"
 }
 
-# 克虏伯钢铁 - 钢铁变体
-prestige_good_krupp_steel = {
-	base_good = steel
-	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_krupp_steel.dds"
-}
-
 # 毛瑟步枪 - 轻武器变体
 prestige_good_mauser_rifles = {
 	base_good = small_arms
@@ -77,13 +70,6 @@ prestige_good_standard_oil = {
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/SOC_crown_oil.dds"
 }
 
-# 无酸纸 - 纸张变体
-prestige_good_acid_free_paper = {
-	base_good = paper
-	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_acid_free_paper.dds"
-}
-
 # 瑞士工具 - 工具变体
 prestige_good_swiss_tools = {
 	base_good = tools
@@ -102,14 +88,7 @@ prestige_good_edison_electricity = {
 prestige_good_marconi_radio = {
 	base_good = radios
 	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_marconi_radio.dds"
-}
-
-# 乌拉尔铁矿 - 铁矿变体
-prestige_good_ural_iron = {
-	base_good = iron
-	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_ural_iron.dds"
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/unused/prestige_good_marconi_radio.dds"
 }
 
 # 西里西亚煤炭 - 煤炭变体
@@ -154,13 +133,6 @@ prestige_good_baltimore_clippers = {
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/Baltimore_clipper.dds"
 }
 
-# 布莱克维尔巡防舰 - 风帆战舰变体
-prestige_good_blackwell_frigates = {
-	base_good = manowars
-	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/Blackwall_frigate.dds"
-}
-
 # 温彻斯特弹药 - 弹药变体
 prestige_good_winchester_ammunition = {
 	base_good = ammunition
@@ -174,4 +146,3 @@ prestige_good_siberian_pine = {
 	prestige_bonus = 0.1
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/siberian_pine.dds"
 }
-

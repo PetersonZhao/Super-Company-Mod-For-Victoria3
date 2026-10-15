@@ -1,10 +1,10 @@
 {
   "name" : "Super Company",
-	"id" : "",
-  "version" : "",
-  "supported_game_version" : "",
-  "short_description" : "",
-  "tags" : [],
+  "id" : "",
+  "version" : "2.0.0",
+  "supported_game_version" : "1.13.*",
+  "short_description" : "Eight intentionally overpowered companies with complementary industrial-chain roles.",
+  "tags" : ["Economy", "Gameplay"],
   "relationships" : [],
   "game_custom_data" : {
     "multiplayer_synchronized" : true

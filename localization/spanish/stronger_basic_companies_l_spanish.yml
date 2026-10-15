@@ -1,52 +1,39 @@
 ﻿l_spanish:
- # Empresas B谩sicas Reforzadas
- company_global_automotive_industries: "Industrias Automotrices Globales"
- company_global_automotive_industries_desc: "Una empresa global de fabricaci贸n automotriz fundada por Henry Ford y Karl Benz, enfocada en autos de lujo, motores y productos de caucho."
+ company_global_automotive_industries: "Industrias automotrices globales"
+ company_global_automotive_industries_desc: "Un grupo automotriz global dedicado a automóviles, motores y caucho."
+ company_international_commercial_group: "Grupo comercial internacional"
+ company_international_commercial_group_desc: "Un grupo comercial que conecta la agricultura, los bienes de consumo y la logística portuaria."
+ company_global_construction_group: "Grupo global de construcción"
+ company_global_construction_group_desc: "Un grupo de construcción integrado que produce acero, vidrio, explosivos y muebles."
+ company_military_industrial_complex: "Complejo militar-industrial"
+ company_military_industrial_complex_desc: "Un grupo de armamento y construcción naval que suministra armas, munición, artillería y buques modernos."
+ company_petrochemical_giant: "Gigante petroquímico"
+ company_petrochemical_giant_desc: "Un grupo integrado de petróleo, química, materiales sintéticos y ferrocarriles."
+ company_international_financial_group: "Grupo financiero internacional"
+ company_international_financial_group_desc: "Un grupo financiero e industrial que conecta el capital con la producción de madera, papel y herramientas."
+ company_tech_industrial_group: "Grupo industrial tecnológico"
+ company_tech_industrial_group_desc: "Un grupo eléctrico orientado a la investigación, la electrónica, la radio y la educación superior."
+ company_global_mining_resources_group: "Grupo mundial de recursos mineros"
+ company_global_mining_resources_group_desc: "Una empresa minera integrada especializada en hierro, carbón, azufre, plomo y oro."
 
- company_international_commercial_group: "Grupo Comercial Internacional"
- company_international_commercial_group_desc: "Una cadena minorista nacional fundada por John Wanamaker y Marshall Field, que proporciona uniformes premium, comida gourmet y caf茅 de calidad."
-
- company_global_construction_group: "Grupo de Construcci贸n Global"
- company_global_construction_group_desc: "Una empresa inmobiliaria internacional fundada por Gustave Eiffel y Andrew Carnegie, enfocada en vidrio reforzado y acero inoxidable."
-
- company_military_industrial_complex: "Complejo Militar-Industrial"
- company_military_industrial_complex_desc: "Una empresa profesional de fabricaci贸n de armas fundada por Alfred Krupp y Samuel Colt, que produce rifles autom谩ticos y explosivos C4."
-
- company_petrochemical_giant: "Gigante Petroqu铆mico"
- company_petrochemical_giant_desc: "Una empresa avanzada de refinaci贸n de petr贸leo fundada por John D. Rockefeller y Ludwig Nobel, que proporciona productos petroleros refinados de alta calidad."
-
- company_international_financial_group: "Grupo Financiero Internacional"
- company_international_financial_group_desc: "Una instituci贸n financiera de nivel nacional fundada por J.P. Morgan y Nathan Rothschild, que proporciona servicios bancarios integrales y apoyo financiero."
-
- company_tech_industrial_group: "Grupo Industrial Tecnol贸gico"
- company_tech_industrial_group_desc: "Una empresa profesional de consultor铆a industrial e inform谩tica fundada por Thomas Edison y Guglielmo Marconi, que proporciona productos el茅ctricos y de radio."
-
- # Prestige Goods
- prestige_good_benz_automobiles: "Autom贸viles Benz"
+ prestige_good_benz_automobiles: "Automóviles Benz"
  prestige_good_benz_engines: "Motores Benz"
  prestige_good_michelin_rubber: "Caucho Michelin"
- prestige_good_savile_row_suits: "Trajes Savile Row"
+ prestige_good_savile_row_suits: "Kimonos de Kioto"
  prestige_good_campbell_soup: "Sopa Campbell"
- prestige_good_blue_mountain_coffee: "Caf茅 Blue Mountain"
+ prestige_good_blue_mountain_coffee: "Café Blue Mountain"
  prestige_good_tiffany_glass: "Vidrio Tiffany"
- prestige_good_krupp_steel: "Acero Krupp"
- prestige_good_mauser_rifles: "Rifles Mauser"
+ prestige_good_mauser_rifles: "Fusiles Mauser"
  prestige_good_nobel_explosives: "Explosivos Nobel"
- prestige_good_standard_oil: "Standard Oil"
- prestige_good_acid_free_paper: "Papel Sin 脕cido"
- prestige_good_swiss_tools: "Herramientas Suizas"
+ prestige_good_standard_oil: "Petróleo Standard Oil"
+ prestige_good_swiss_tools: "Herramientas suizas"
  prestige_good_edison_electricity: "Electricidad Edison"
  prestige_good_marconi_radio: "Radio Marconi"
-
-
-
-
- # Corporaci贸n de Fundici贸n Mineral
- company_mineral_smelting_corporation: "Corporaci贸n de Fundici贸n Mineral"
- company_mineral_smelting_corporation_desc: "Una empresa integral de fundici贸n mineral fundada por Tong King-sing y John D. Rockefeller, especializada en la miner铆a y fundici贸n de hierro, carb贸n, azufre y plomo de alta calidad."
-
- # Bienes de Prestigio de Fundici贸n Mineral
- prestige_good_russia_iron: "Hierro de los Urales"
+ prestige_good_prr_quick_transport: "Transporte ferroviario rápido"
+ prestige_good_liquor_rum: "Ron"
+ prestige_good_baltimore_clippers: "Clíperes de Baltimore"
+ prestige_good_winchester_ammunition: "Munición Winchester"
+ prestige_good_siberian_pine: "Pino siberiano"
  prestige_good_rio_tinto_sulfur: "Azufre de Rio Tinto"
  prestige_good_broken_hill_lead: "Plomo de Broken Hill"
- prestige_good_silesian_coal: "Carb贸n de Silesia"
+ prestige_good_silesian_coal: "Carbón de Silesia"

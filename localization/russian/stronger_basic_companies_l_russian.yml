@@ -1,52 +1,39 @@
 ﻿l_russian:
- # 校褋懈谢械薪薪褘械 袘邪蟹芯胁褘械 袣芯屑锌邪薪懈懈
- company_global_automotive_industries: "袚谢芯斜邪谢褜薪邪褟 袗胁褌芯屑芯斜懈谢褜薪邪褟 袩褉芯屑褘褕谢械薪薪芯褋褌褜"
- company_global_automotive_industries_desc: "袚谢芯斜邪谢褜薪芯械 锌褉械写锌褉懈褟褌懈械 锌芯 锌褉芯懈蟹胁芯写褋褌胁褍 邪胁褌芯屑芯斜懈谢械泄, 芯褋薪芯胁邪薪薪芯械 袚械薪褉懈 肖芯褉写芯屑 懈 袣邪褉谢芯屑 袘械薪褑械屑, 褋锌械褑懈邪谢懈蟹懈褉褍褞褖械械褋褟 薪邪 褉芯褋泻芯褕薪褘褏 邪胁褌芯屑芯斜懈谢褟褏, 写胁懈谐邪褌械谢褟褏 懈 褉械蟹懈薪芯胁褘褏 懈蟹写械谢懈褟褏."
+ company_global_automotive_industries: "Глобальная автомобильная промышленность"
+ company_global_automotive_industries_desc: "Глобальная автомобильная группа, объединяющая производство автомобилей, двигателей и каучука."
+ company_international_commercial_group: "Международная торговая группа"
+ company_international_commercial_group_desc: "Торговая группа, связывающая сельское хозяйство, потребительские товары и портовую логистику."
+ company_global_construction_group: "Глобальная строительная группа"
+ company_global_construction_group_desc: "Интегрированная строительная группа, производящая сталь, стекло, взрывчатку и мебель."
+ company_military_industrial_complex: "Военно-промышленный комплекс"
+ company_military_industrial_complex_desc: "Оружейно-судостроительная группа, поставляющая оружие, боеприпасы, артиллерию и современные корабли."
+ company_petrochemical_giant: "Нефтехимический гигант"
+ company_petrochemical_giant_desc: "Интегрированная группа нефтяной, химической, синтетической и железнодорожной промышленности."
+ company_international_financial_group: "Международная финансовая группа"
+ company_international_financial_group_desc: "Финансово-промышленная группа, связывающая капитал с производством древесины, бумаги и инструментов."
+ company_tech_industrial_group: "Технологическая промышленная группа"
+ company_tech_industrial_group_desc: "Исследовательская электротехническая группа, развивающая энергетику, электронику, радио и высшее образование."
+ company_global_mining_resources_group: "Глобальная горнодобывающая группа"
+ company_global_mining_resources_group_desc: "Интегрированное горнодобывающее предприятие по добыче железа, угля, серы, свинца и золота."
 
- company_international_commercial_group: "袦械卸写褍薪邪褉芯写薪邪褟 袣芯屑屑械褉褔械褋泻邪褟 袚褉褍锌锌邪"
- company_international_commercial_group_desc: "袧邪褑懈芯薪邪谢褜薪邪褟 褉芯蟹薪懈褔薪邪褟 褋械褌褜, 芯褋薪芯胁邪薪薪邪褟 袛卸芯薪芯屑 袙邪薪邪屑邪泻械褉芯屑 懈 袦邪褉褕邪谢谢芯屑 肖懈谢写芯屑, 锌褉械写芯褋褌邪胁谢褟褞褖邪褟 锌褉械屑懈邪谢褜薪褘械 褍薪懈褎芯褉屑褘, 懈蟹褘褋泻邪薪薪褍褞 械写褍 懈 泻邪褔械褋褌胁械薪薪褘泄 泻芯褎械."
-
- company_global_construction_group: "袚谢芯斜邪谢褜薪邪褟 小褌褉芯懈褌械谢褜薪邪褟 袚褉褍锌锌邪"
- company_global_construction_group_desc: "袦械卸写褍薪邪褉芯写薪邪褟 薪械写胁懈卸懈屑邪褟 泻芯屑锌邪薪懈褟, 芯褋薪芯胁邪薪薪邪褟 袚褞褋褌邪胁芯屑 协泄褎械谢械屑 懈 协薪写褉褞 袣邪褉薪械谐懈, 褋锌械褑懈邪谢懈蟹懈褉褍褞褖邪褟褋褟 薪邪 邪褉屑懈褉芯胁邪薪薪芯屑 褋褌械泻谢械 懈 薪械褉卸邪胁械褞褖械泄 褋褌邪谢懈."
-
- company_military_industrial_complex: "袙芯械薪薪芯-袩褉芯屑褘褕谢械薪薪褘泄 袣芯屑锌谢械泻褋"
- company_military_industrial_complex_desc: "袩褉芯褎械褋褋懈芯薪邪谢褜薪芯械 锌褉械写锌褉懈褟褌懈械 锌芯 锌褉芯懈蟹胁芯写褋褌胁褍 芯褉褍卸懈褟, 芯褋薪芯胁邪薪薪芯械 袗谢褜褎褉械写芯屑 袣褉褍锌锌芯屑 懈 小褝屑褞褝谢械屑 袣芯谢褜褌芯屑, 锌褉芯懈蟹胁芯写褟褖械械 邪胁褌芯屑邪褌懈褔械褋泻懈械 胁懈薪褌芯胁泻懈 懈 胁蟹褉褘胁褔邪褌褘械 胁械褖械褋褌胁邪 C4."
-
- company_petrochemical_giant: "袧械褎褌械褏懈屑懈褔械褋泻懈泄 袚懈谐邪薪褌"
- company_petrochemical_giant_desc: "袩械褉械写芯胁芯械 锌褉械写锌褉懈褟褌懈械 锌芯 锌械褉械褉邪斜芯褌泻械 薪械褎褌懈, 芯褋薪芯胁邪薪薪芯械 袛卸芯薪芯屑 袛. 袪芯泻褎械谢谢械褉芯屑 懈 袥褞写胁懈谐芯屑 袧芯斜械谢械屑, 锌褉械写芯褋褌邪胁谢褟褞褖械械 胁褘褋芯泻芯泻邪褔械褋褌胁械薪薪褘械 薪械褎褌械锌褉芯写褍泻褌褘."
-
- company_international_financial_group: "袦械卸写褍薪邪褉芯写薪邪褟 肖懈薪邪薪褋芯胁邪褟 袚褉褍锌锌邪"
- company_international_financial_group_desc: "袧邪褑懈芯薪邪谢褜薪邪褟 褎懈薪邪薪褋芯胁邪褟 懈薪褋褌懈褌褍褑懈褟, 芯褋薪芯胁邪薪薪邪褟 袛卸.袩. 袦芯褉谐邪薪芯屑 懈 袧邪褌邪薪芯屑 袪芯褌褕懈谢褜写芯屑, 锌褉械写芯褋褌邪胁谢褟褞褖邪褟 泻芯屑锌谢械泻褋薪褘械 斜邪薪泻芯胁褋泻懈械 褍褋谢褍谐懈 懈 褎懈薪邪薪褋芯胁褍褞 锌芯写写械褉卸泻褍."
-
- company_tech_industrial_group: "孝械褏薪芯谢芯谐懈褔械褋泻邪褟 袩褉芯屑褘褕谢械薪薪邪褟 袚褉褍锌锌邪"
- company_tech_industrial_group_desc: "袩褉芯褎械褋褋懈芯薪邪谢褜薪芯械 锌褉械写锌褉懈褟褌懈械 锌褉芯屑褘褕谢械薪薪芯谐芯 懈 袠孝-泻芯薪褋邪谢褌懈薪谐邪, 芯褋薪芯胁邪薪薪芯械 孝芯屑邪褋芯屑 协写懈褋芯薪芯屑 懈 袚褍谢褜械谢褜屑芯 袦邪褉泻芯薪懈, 锌褉械写芯褋褌邪胁谢褟褞褖械械 褝谢械泻褌褉懈褔械褋泻懈械 懈 褉邪写懈芯锌褉芯写褍泻褌褘."
-
- # Prestige Goods
- prestige_good_benz_automobiles: "袗胁褌芯屑芯斜懈谢懈 Rolls-Royce"
- prestige_good_benz_engines: "袛胁懈谐邪褌械谢懈 Mercedes"
- prestige_good_michelin_rubber: "袪械蟹懈薪邪 Michelin"
- prestige_good_savile_row_suits: "袣芯褋褌褞屑褘 Savile Row"
- prestige_good_campbell_soup: "小褍锌 Campbell"
- prestige_good_blue_mountain_coffee: "袣芯褎械 Blue Mountain"
- prestige_good_tiffany_glass: "小褌械泻谢芯 Tiffany"
- prestige_good_krupp_steel: "小褌邪谢褜 Krupp"
- prestige_good_mauser_rifles: "袙懈薪褌芯胁泻懈 Mauser"
- prestige_good_nobel_explosives: "袙蟹褉褘胁褔邪褌褘械 袙械褖械褋褌胁邪 Nobel"
- prestige_good_standard_oil: "Standard Oil"
- prestige_good_acid_free_paper: "袘械褋泻懈褋谢芯褌薪邪褟 袘褍屑邪谐邪"
- prestige_good_swiss_tools: "楔胁械泄褑邪褉褋泻懈械 袠薪褋褌褉褍屑械薪褌褘"
- prestige_good_edison_electricity: "协谢械泻褌褉懈褔械褋褌胁芯 Edison"
- prestige_good_marconi_radio: "袪邪写懈芯 Marconi"
-
-
-
-
- # 袣芯褉锌芯褉邪褑懈褟 袦懈薪械褉邪谢褜薪芯泄 袩谢邪胁泻懈
- company_mineral_smelting_corporation: "袣芯褉锌芯褉邪褑懈褟 袦懈薪械褉邪谢褜薪芯泄 袩谢邪胁泻懈"
- company_mineral_smelting_corporation_desc: "袣芯屑锌谢械泻褋薪芯械 锌褉械写锌褉懈褟褌懈械 锌芯 锌谢邪胁泻械 屑懈薪械褉邪谢芯胁, 芯褋薪芯胁邪薪薪芯械 孝芯薪谐 袣懈薪谐-褋懈薪谐芯屑 懈 袛卸芯薪芯屑 袛. 袪芯泻褎械谢谢械褉芯屑, 褋锌械褑懈邪谢懈蟹懈褉褍褞褖械械褋褟 薪邪 写芯斜褘褔械 懈 锌谢邪胁泻械 胁褘褋芯泻芯泻邪褔械褋褌胁械薪薪芯谐芯 卸械谢械蟹邪, 褍谐谢褟, 褋械褉褘 懈 褋胁懈薪褑邪."
-
- # 袩褉械褋褌懈卸薪褘械 孝芯胁邪褉褘 袦懈薪械褉邪谢褜薪芯泄 袩谢邪胁泻懈
- prestige_good_russia_iron: "校褉邪谢褜褋泻芯械 袞械谢械蟹芯"
- prestige_good_rio_tinto_sulfur: "小械褉邪 袪懈芯-孝懈薪褌芯"
- prestige_good_broken_hill_lead: "小胁懈薪械褑 袘褉芯泻械薪-啸懈谢谢"
- prestige_good_silesian_coal: "小懈谢械蟹褋泻懈泄 校谐芯谢褜"
+ prestige_good_benz_automobiles: "Автомобили Benz"
+ prestige_good_benz_engines: "Двигатели Benz"
+ prestige_good_michelin_rubber: "Каучук Michelin"
+ prestige_good_savile_row_suits: "Киотские кимоно"
+ prestige_good_campbell_soup: "Суп Campbell"
+ prestige_good_blue_mountain_coffee: "Кофе Blue Mountain"
+ prestige_good_tiffany_glass: "Стекло Tiffany"
+ prestige_good_mauser_rifles: "Винтовки Mauser"
+ prestige_good_nobel_explosives: "Взрывчатка Nobel"
+ prestige_good_standard_oil: "Нефть Standard Oil"
+ prestige_good_swiss_tools: "Швейцарские инструменты"
+ prestige_good_edison_electricity: "Электричество Edison"
+ prestige_good_marconi_radio: "Радио Marconi"
+ prestige_good_prr_quick_transport: "Скоростной железнодорожный транспорт"
+ prestige_good_liquor_rum: "Ром"
+ prestige_good_baltimore_clippers: "Балтиморские клиперы"
+ prestige_good_winchester_ammunition: "Боеприпасы Winchester"
+ prestige_good_siberian_pine: "Сибирская сосна"
+ prestige_good_rio_tinto_sulfur: "Сера Rio Tinto"
+ prestige_good_broken_hill_lead: "Свинец Broken Hill"
+ prestige_good_silesian_coal: "Силезский уголь"

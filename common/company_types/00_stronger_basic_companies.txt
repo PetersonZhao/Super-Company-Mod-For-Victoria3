@@ -1,28 +1,23 @@
-##############################STRONGER BASIC COMPANIES##############################
+﻿############################## SUPER COMPANY: EIGHT-COMPANY ROSTER ##############################
 
-# 全球汽车工业集团
+# 全球汽车工业集团：橡胶 -> 发动机 -> 汽车
 company_global_automotive_industries = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/global_automotive_industries.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
-	
 	flavored_company = yes
-	
+
 	possible_prestige_goods = {
 		prestige_good_benz_automobiles
+		prestige_good_benz_engines
 		prestige_good_michelin_rubber
 	}
-	
 
-	
-	building_types = {  
+	building_types = {
 		building_automotive_industry
+		building_motor_industry
 		building_rubber_plantation
 	}
-	
-	extension_building_types = {	
-		building_military_shipyards
-	}
-	
+
 	potential = {
 		always = yes
 	}
@@ -31,42 +26,38 @@ company_global_automotive_industries = {
 		has_technology_researched = combustion_engine
 	}
 
-	possible = { 
+	possible = {
 		any_scope_state = {
 			any_scope_building = {
 				OR = {
-					is_building_type = building_rubber_plantation
 					is_building_type = building_automotive_industry
+					is_building_type = building_motor_industry
+					is_building_type = building_rubber_plantation
 				}
-				level >= 3
+				level >= 5
 			}
 		}
 		has_technology_researched = combustion_engine
 	}
-	
-	prosperity_modifier = { 
+
+	prosperity_modifier = {
 		unit_army_offense_mult = 0.1
 		state_trade_advantage_mult = 0.3
-		building_rubber_plantation_throughput_add = 5.0
-		building_automotive_industry_throughput_add = 0.6
-	}
-	
-	ai_will_do = {
-		always = no
+		building_rubber_plantation_throughput_add = 2.5
+		building_motor_industry_throughput_add = 1.5
+		building_automotive_industry_throughput_add = 1.25
 	}
 
-	ai_weight = {
-		value = 5
-	}
+	ai_will_do = { always = no }
+	ai_weight = { value = 5 }
 }
 
-# 国际商业集团
+# 国际商业集团：农牧渔业、消费品与港口物流
 company_international_commercial_group = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/international_commercial_group.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
-	
 	flavored_company = yes
-	
+
 	possible_prestige_goods = {
 		prestige_good_generic_clothes
 		prestige_good_savile_row_suits
@@ -78,11 +69,11 @@ company_international_commercial_group = {
 		prestige_good_sea_island_cotton
 		prestige_good_generic_opium
 		prestige_good_assam_tea
-
+		prestige_good_cigars
+		prestige_good_generic_merchant_marine
 	}
-	
-	
-	building_types = {  
+
+	building_types = {
 		building_textile_mill
 		building_food_industry
 		building_coffee_plantation
@@ -98,470 +89,8 @@ company_international_commercial_group = {
 		building_opium_plantation
 		building_tea_plantation
 		building_silk_plantation
-	}
-	
-	extension_building_types = {	
 		building_tobacco_plantation
-		building_grape_plantation
-	}
-	
-	potential = {
-		always = yes
-	}
-
-	possible = { 
-		any_scope_state = {
-			any_scope_building = {
-				OR = {
-					is_building_type = building_textile_mill
-					is_building_type = building_food_industry
-					is_building_type = building_coffee_plantation
-					is_building_type = building_livestock_ranch
-					is_building_type = building_rye_farm
-					is_building_type = building_wheat_farm
-					is_building_type = building_maize_farm
-					is_building_type = building_rice_farm
-					is_building_type = building_cotton_plantation
-					is_building_type = building_fishing_wharf
-					is_building_type = building_sugar_plantation
-					is_building_type = building_opium_plantation
-					is_building_type = building_tea_plantation
-				}
-				level >= 3
-			}
-		}
-	}
-	
-	prosperity_modifier = {
-		country_max_companies_add = 1
-		state_birth_rate_mult = 0.6
-		state_assimilation_mult = 0.9
-		country_influence_mult = 0.3
-		country_influence_gain_mult = 0.2
-		state_migration_attraction_mult = 0.2
-		building_group_bg_ranching_throughput_add = 2.0
-		building_group_bg_plantations_throughput_add = 0.9
-		building_group_bg_agriculture_throughput_add = 4.0	
-		building_fishing_wharf_throughput_add = 0.9
-		state_trade_advantage_mult = 0.2
-	}
-	
-	ai_will_do = {
-		always = no
-	}
-
-	ai_weight = {
-		value = 5
-	}
-}
-
-# 环球建设集团
-company_global_construction_group = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/global_construction_group.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
-	
-	flavored_company = yes
-	
-	possible_prestige_goods = {
-		prestige_good_tiffany_glass
-		prestige_good_krupp_steel
-		prestige_good_meissen_porcelain
-		prestige_good_generic_furniture
-		prestige_good_english_upholstery
-		prestige_good_nobel_explosives
-	}
-	
-
-	
-	building_types = {  
-		building_glassworks
-		building_explosives_factory
-		building_steel_mill
-		building_furniture_manufactory
-	}
-	
-	extension_building_types = {	
-		building_iron_mine
-	}
-	
-	potential = {
-		always = yes
-	}
-
-	possible = { 
-		any_scope_state = {
-			any_scope_building = {
-				OR = {
-					is_building_type = building_glassworks
-					is_building_type = building_steel_mill
-					is_building_type = building_explosives_factory
-					is_building_type = building_furniture_manufactory
-				}
-				level >= 3
-			}
-		}
-	}
-	
-	prosperity_modifier = { 
-		country_max_weekly_construction_progress_add = 15
-		building_construction_sector_throughput_add = 0.5
-		building_explosives_factory_throughput_add = 0.5
-		building_glassworks_throughput_add = 0.5
-		state_construction_efficiency_mult = 0.5
-		building_furniture_manufacturies_throughput_add = 0.5
-		building_group_bg_heavy_industry_throughput_add = 0.5
-		building_steel_mills_throughput_add = 0.5
-	}
-	
-	ai_will_do = {
-		always = no
-	}
-
-	ai_weight = {
-		value = 5
-	}
-}
-
-# 军工联合体
-company_military_industrial_complex = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/precision_weapons_manufacturer.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
-	
-	flavored_company = yes
-	
-	possible_prestige_goods = {
-		prestige_good_mauser_rifles
-		prestige_good_krupp_guns
-		prestige_good_winchester_ammunition
-	}
-
-	building_types = {  
-		building_arms_industry
-		building_artillery_foundry
-	}
-	
-	extension_building_types = {
-		building_munition_plant
-	}
-	
-	potential = {
-		always = yes
-	}
-
-	possible = {
-		any_scope_state = {
-			any_scope_building = {
-				OR = {
-					is_building_type = building_arms_industry
-					is_building_type = building_artillery_foundry
-				}
-				level >= 3
-			}
-		}
-	}
-	
-	prosperity_modifier = { 
-		unit_army_offense_mult = 1.0
-		unit_army_defense_mult = 1.0
-		interest_group_ig_armed_forces_pop_attraction_mult = 0.3
-		country_military_goods_cost_mult = -0.8
-		building_arms_industry_throughput_add = 0.5
-	}
-	
-	ai_will_do = {
-		always = no
-	}
-
-	ai_weight = {
-		value = 5
-	}
-}
-
-# 石油化工巨头
-company_petrochemical_giant = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/petrochemical_giant.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_oil_drills.dds"
-	
-	flavored_company = yes
-	
-	possible_prestige_goods = {
-		prestige_good_standard_oil
-		prestige_good_generic_fertilizer
-		prestige_good_german_aniline
-		prestige_good_prr_quick_transport
-	}
-	
-	building_types = {  
-		building_oil_rig
-		building_synthetics_plant
-		building_chemical_plant
-		building_railway
-	}
-	
-	extension_building_types = {	
-		building_dye_plantation
-	}
-	
-	potential = {
-		always = yes
-	}
-
-	possible = { 
-		any_scope_state = {
-			any_scope_building = {
-				OR = {
-					is_building_type = building_oil_rig
-					is_building_type = building_synthetics_plant
-					is_building_type = building_chemical_plant
-					is_building_type = building_railway
-				}
-				level >= 3
-			}
-		}
-	}
-	
-	prosperity_modifier = { 
-		state_infrastructure_mult = 0.5
-		building_group_bg_oil_extraction_throughput_add = 5.0
-		building_railway_throughput_add = 0.9
-	}
-	
-	ai_will_do = {
-		always = no
-	}
-
-	ai_weight = {
-		value = 5
-	}
-}
-
-# 国际金融集团
-company_international_financial_group = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/international_financial_group.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
-	
-	flavored_company = yes
-	
-	possible_prestige_goods = {
-		prestige_good_generic_paper
-		prestige_good_swiss_tools
-		prestige_good_rosewood
-		prestige_good_siberian_pine
-	}
-	
-
-	
-	building_types = {  
-		building_paper_mill
-		building_tooling_workshop
-		building_financial_district
-	}
-	
-	extension_building_types = {	
-		building_logging_camp
-	}
-	
-	potential = {
-		always = yes
-	}
-
-	possible = { 
-		any_scope_state = {
-			any_scope_building = {
-				OR = {
-					is_building_type = building_paper_mill
-					is_building_type = building_tooling_workshop
-				}
-				level >= 3
-			}
-		}
-	}
-	
-	prosperity_modifier = { 
-		country_max_companies_add = 1
-		country_income_add = 50000
-		country_loan_interest_rate_mult = -0.1
-		country_private_construction_allocation_mult = 0.1
-		country_minting_mult = 0.1
-		
-		state_farmers_investment_pool_contribution_add = 0.1
-		state_shopkeepers_investment_pool_contribution_add = 0.1
-		state_clergymen_investment_pool_contribution_add = 0.1
-		state_aristocrats_investment_pool_contribution_add = 0.1
-		state_capitalists_investment_pool_contribution_add = 0.1
-		
-		building_nationalization_investment_return_add = 0.1
-		building_group_bg_logging_throughput_add = 8.0
-		building_paper_mill_throughput_add = 1.0
-		building_tooling_workshop_throughput_add = 1.0
-		country_government_dividends_reinvestment_add = 0.1
-		country_government_dividends_efficiency_add = 0.1
-		
-		state_shopkeepers_investment_efficiency_mult = 0.2
-		state_farmers_investment_efficiency_mult = 0.2
-	}
-	
-	ai_will_do = {
-		always = no
-	}
-
-	ai_weight = {
-		value = 5
-	}
-}
-
-# 科技工业集团
-company_tech_industrial_group = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/tech_industrial_group.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
-	
-	flavored_company = yes
-	
-	possible_prestige_goods = {
-		prestige_good_edison_electricity
-		prestige_good_grand_strategy_games
-	}
-	
-
-	
-	building_types = {  
-		building_power_plant
-		building_electrics_industry
-	}
-	
-	extension_building_types = {	
-		building_motor_industry
-		building_art_academy
-	}
-	
-	potential = {
-		always = yes
-	}
-
-	attainable = {
-		has_technology_researched = electrical_generation
-	}
-
-	possible = { 
-		any_scope_state = {
-			any_scope_building = {
-				OR = {
-					is_building_type = building_power_plant
-					is_building_type = building_electrics_industry
-				}
-				level >= 3
-			}
-		}
-		has_technology_researched = electrical_generation
-	}
-	
-	prosperity_modifier = { 
-		country_weekly_innovation_max_add = 20
-		building_urban_center_throughput_add = 0.2
-		country_administration_efficiency_mult = 0.2
-		country_influence_mult = 0.3
-		building_power_plant_throughput_add = 2.0
-		building_electrics_industry_throughput_add = 1.0
-		building_art_academy_throughput_add = 2.0
-		building_university_throughput_add = 1.0
-	}
-	
-	ai_will_do = {
-		always = no
-	}
-
-	ai_weight = {
-		value = 5
-	}
-}
-
-# 矿物冶炼集团
-company_mineral_smelting_corporation = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/mineral_smelting_corporation.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
-	
-	flavored_company = yes
-	
-	possible_prestige_goods = {
-		prestige_good_ural_iron
-		prestige_good_silesian_coal
-		prestige_good_rio_tinto_sulfur
-		prestige_good_broken_hill_lead
-	}
-	
-
-	
-	building_types = {  
-		building_iron_mine
-		building_coal_mine
-		building_sulfur_mine
-		building_lead_mine
-	}
-	
-	extension_building_types = {	
-		building_gold_mine
-	}
-	
-	potential = {
-		always = yes
-	}
-
-	attainable = {
-		has_technology_researched = steelworking
-	}
-
-	possible = { 
-		any_scope_state = {
-			any_scope_building = {
-				OR = {
-					is_building_type = building_iron_mine
-					is_building_type = building_coal_mine
-					is_building_type = building_sulfur_mine
-					is_building_type = building_lead_mine
-				}
-				level >= 3
-			}
-		}
-	}
-	
-	prosperity_modifier = { 
-		building_iron_mine_throughput_add = 0.6
-		building_coal_mine_throughput_add = 0.6
-		building_sulfur_mine_throughput_add = 0.6
-		building_lead_mine_throughput_add = 0.6
-		building_gold_mine_throughput_add = 5.0
-		building_group_bg_mining_throughput_add = 0.6
-	}
-	
-	ai_will_do = {
-		always = no
-	}
-
-	ai_weight = {
-		value = 5
-	}
-}
-
-# MTM 陆海机械制造厂
-company_la_maquinista_terrestre_y_maritima = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/la_maquinista_terrestre_y_maritima.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
-
-	flavored_company = yes
-
-	possible_prestige_goods = {
-		prestige_good_baltimore_clippers
-		prestige_good_blackwell_frigates
-		prestige_good_generic_merchant_marine
-		prestige_good_armstrong_ships
-		prestige_good_clyde_built_liners
-		prestige_good_benz_engines
-	}
-
-	building_types = {
-		building_shipyard
-		building_military_shipyard
-		building_motor_industry
+		building_vineyard
 	}
 
 	extension_building_types = {
@@ -572,36 +101,433 @@ company_la_maquinista_terrestre_y_maritima = {
 		always = yes
 	}
 
+	attainable = {
+		has_technology_researched = corporate_charters
+	}
+
 	possible = {
 		any_scope_state = {
 			any_scope_building = {
 				OR = {
-					is_building_type = building_shipyard
-					is_building_type = building_military_shipyard
-					is_building_type = building_motor_industry
+					is_building_type = building_textile_mill
+					is_building_type = building_food_industry
+					is_building_type = building_coffee_plantation
+					is_building_type = building_livestock_ranch
+					is_building_type = building_wheat_farm
+					is_building_type = building_rye_farm
+					is_building_type = building_maize_farm
+					is_building_type = building_rice_farm
+					is_building_type = building_fishing_wharf
+					is_building_type = building_cotton_plantation
+					is_building_type = building_sugar_plantation
+					is_building_type = building_opium_plantation
+					is_building_type = building_tea_plantation
 				}
-				level >= 3
+				level >= 5
 			}
 		}
+		has_technology_researched = corporate_charters
 	}
 
 	prosperity_modifier = {
 		country_max_companies_add = 1
-		building_group_bg_heavy_industry_throughput_add = 0.5
-		interest_group_ig_industrialists_approval_add = 3
-		building_shipyards_throughput_add = 0.3
-		unit_navy_offense_mult = 0.6
-		unit_navy_defense_mult = 0.6
+		state_birth_rate_mult = 1
+		state_assimilation_mult = 0.9
+		country_influence_mult = 0.3
+		state_migration_pull_mult = 0.2
+		state_trade_advantage_mult = 0.2
+		building_rye_farm_throughput_add = 5
+		building_wheat_farm_throughput_add = 5
+		building_rice_farm_throughput_add = 5
+		building_maize_farm_throughput_add = 5
+		building_millet_farm_throughput_add = 5
+		building_livestock_ranch_throughput_add = 2
+		building_group_bg_plantations_throughput_add = 1.25
+		building_fishing_wharf_throughput_add = 1.25
+		building_food_industry_throughput_add = 1.0
+		building_textile_mill_throughput_add = 1.0
+		building_port_throughput_add = 1.25
+	}
+
+	ai_will_do = { always = no }
+	ai_weight = { value = 5 }
+}
+
+# 环球建设集团：钢铁、玻璃、炸药、家具与施工
+company_global_construction_group = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/global_construction_group.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	flavored_company = yes
+
+	possible_prestige_goods = {
+		prestige_good_tiffany_glass
+		prestige_good_generic_steel
+		prestige_good_meissen_porcelain
+		prestige_good_generic_furniture
+		prestige_good_english_upholstery
+		prestige_good_nobel_explosives
+	}
+
+	building_types = {
+		building_glassworks
+		building_explosives_factory
+		building_steel_mill
+		building_furniture_manufactory
+	}
+
+	extension_building_types = {
+		building_iron_mine
+	}
+
+	potential = {
+		always = yes
+	}
+
+	attainable = {
+		has_technology_researched = corporate_charters
+	}
+
+	possible = {
+		any_scope_state = {
+			any_scope_building = {
+				OR = {
+					is_building_type = building_glassworks
+					is_building_type = building_explosives_factory
+					is_building_type = building_steel_mill
+					is_building_type = building_furniture_manufactory
+				}
+				level >= 5
+			}
+		}
+		has_technology_researched = corporate_charters
+	}
+
+	prosperity_modifier = {
+		country_max_weekly_construction_progress_add = 15
+		building_construction_sector_throughput_add = 4
+		state_construction_mult = 1
+		building_explosives_factory_throughput_add = 1.25
+		building_glassworks_throughput_add = 1.25
+		building_furniture_manufactory_throughput_add = 1.25
+		building_steel_mill_throughput_add = 1.25
+	}
+
+	ai_will_do = { always = no }
+	ai_weight = { value = 5 }
+}
+
+# 军工联合体：陆军军工、造船与海军建设
+company_military_industrial_complex = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/precision_weapons_manufacturer.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	flavored_company = yes
+
+	possible_prestige_goods = {
+		prestige_good_mauser_rifles
+		prestige_good_krupp_guns
+		prestige_good_winchester_ammunition
+		prestige_good_baltimore_clippers
+		prestige_good_clyde_built_liners
+	}
+
+	building_types = {
+		building_arms_industry
+		building_artillery_foundry
+		building_munition_plant
+		building_shipyard
+	}
+
+	extension_building_types = {
+		building_explosives_factory
+	}
+
+	potential = {
+		always = yes
+	}
+
+	attainable = {
+		has_technology_researched = breech_loading_artillery
+	}
+
+	possible = {
+		any_scope_state = {
+			any_scope_building = {
+				OR = {
+					is_building_type = building_arms_industry
+					is_building_type = building_artillery_foundry
+					is_building_type = building_munition_plant
+					is_building_type = building_shipyard
+				}
+				level >= 5
+			}
+		}
+		has_technology_researched = breech_loading_artillery
+	}
+
+	prosperity_modifier = {
+		unit_army_offense_mult = 1.0
+		unit_army_defense_mult = 1.0
+		unit_naval_invasion_efficiency_mult = 0.6
+		interest_group_ig_armed_forces_pop_attraction_mult = 0.3
+		country_military_goods_cost_mult = -0.8
 		country_military_tech_spread_mult = 0.6
+		country_ship_construction_efficiency_add = 0.6
+		country_ship_group_capital_ships_construction_progress_max_mult = 0.6
+		country_ship_group_cruisers_construction_progress_max_mult = 0.6
+		country_ship_group_torpedo_craft_construction_progress_max_mult = 0.6
+		country_ship_group_supply_ships_construction_efficiency_add = 0.6
+		building_arms_industry_throughput_add = 1.25
+		building_artillery_foundry_throughput_add = 1.25
+		building_munition_plant_throughput_add = 1.25
+		building_shipyard_throughput_add = 1.25
+	}
+
+	ai_will_do = { always = no }
+	ai_weight = { value = 5 }
+}
+
+# 石油化工巨头：石油、化工、合成材料与铁路
+company_petrochemical_giant = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/petrochemical_giant.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_oil_drills.dds"
+	flavored_company = yes
+
+	possible_prestige_goods = {
+		prestige_good_standard_oil
+		prestige_good_generic_fertilizer
+		prestige_good_german_aniline
+		prestige_good_prr_quick_transport
+	}
+
+	building_types = {
+		building_oil_rig
+		building_synthetics_plant
+		building_chemical_plant
+		building_railway
+	}
+
+	extension_building_types = {
+		building_dye_plantation
+	}
+
+	potential = {
+		always = yes
+	}
+
+	attainable = {
+		has_technology_researched = pumpjacks
+	}
+
+	possible = {
+		any_scope_state = {
+			any_scope_building = {
+				OR = {
+					is_building_type = building_oil_rig
+					is_building_type = building_synthetics_plant
+					is_building_type = building_chemical_plant
+					is_building_type = building_railway
+				}
+				level >= 5
+			}
+		}
+		has_technology_researched = pumpjacks
+	}
+
+	prosperity_modifier = {
+		state_infrastructure_mult = 0.5
+		building_group_bg_infrastructure_construction_efficiency_add = 1.0
+		building_group_bg_infrastructure_employee_mult = -0.75
+		building_group_bg_oil_extraction_throughput_add = 2.5
+		building_synthetics_plant_throughput_add = 1.5
+		building_chemical_plant_throughput_add = 1.5
+		building_railway_throughput_add = 0.25
+	}
+
+	ai_will_do = { always = no }
+	ai_weight = { value = 5 }
+}
+
+# 国际金融集团：金融、木材、纸张与工具
+company_international_financial_group = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/international_financial_group.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+	flavored_company = yes
+
+	possible_prestige_goods = {
+		prestige_good_generic_paper
+		prestige_good_swiss_tools
+		prestige_good_rosewood
+		prestige_good_siberian_pine
+	}
+
+	building_types = {
+		building_paper_mill
+		building_tooling_workshop
+		building_financial_district
+	}
+
+	extension_building_types = {
+		building_logging_camp
+	}
+
+	potential = {
+		always = yes
+	}
+
+	attainable = {
+		has_technology_researched = central_banking
+	}
+
+	possible = {
+		any_scope_state = {
+			any_scope_building = {
+				OR = {
+					is_building_type = building_paper_mill
+					is_building_type = building_tooling_workshop
+					is_building_type = building_financial_district
+				}
+				level >= 5
+			}
+		}
+		has_technology_researched = central_banking
+	}
+
+	prosperity_modifier = {
+		country_max_companies_add = 1
+		country_tax_income_add = 50000
+		country_loan_interest_rate_mult = -0.1
+		country_private_construction_allocation_mult = 0.1
+		country_minting_mult = 0.1
+		interest_group_ig_industrialists_approval_add = 3
+		state_farmers_investment_pool_contribution_add = 0.1
+		state_shopkeepers_investment_pool_contribution_add = 0.1
+		state_clergymen_investment_pool_contribution_add = 0.1
+		state_aristocrats_investment_pool_contribution_add = 0.1
+		state_capitalists_investment_pool_contribution_add = 0.1
+		building_nationalization_investment_return_add = 0.1
+		country_government_dividends_reinvestment_add = 0.1
+		country_government_dividends_efficiency_add = 0.1
+		building_group_bg_logging_throughput_add = 2.0
+		building_paper_mill_throughput_add = 1.5
+		building_tooling_workshop_throughput_add = 1.5
+	}
+
+	ai_will_do = { always = no }
+	ai_weight = { value = 5 }
+}
+
+# 科技工业集团：电力、电子、科研与创新
+company_tech_industrial_group = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/tech_industrial_group.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+	flavored_company = yes
+
+	possible_prestige_goods = {
+		prestige_good_edison_electricity
+		prestige_good_marconi_radio
+		prestige_good_grand_strategy_games
+	}
+
+	building_types = {
+		building_power_plant
+		building_electrics_industry
+	}
+
+	extension_building_types = {
+		building_art_academy
+		building_university
+	}
+
+	potential = {
+		always = yes
+	}
+
+	attainable = {
+		has_technology_researched = electrical_generation
+	}
+
+	possible = {
+		any_scope_state = {
+			any_scope_building = {
+				OR = {
+					is_building_type = building_power_plant
+					is_building_type = building_electrics_industry
+				}
+				level >= 5
+			}
+		}
+		has_technology_researched = electrical_generation
+	}
+
+	prosperity_modifier = {
+		country_max_companies_add = 1
+		country_weekly_innovation_max_add = 20
 		country_weekly_innovation_mult = 0.6
-		building_motor_industry_throughput_add = 0.6
+		country_bureaucracy_mult = 0.2
+		country_influence_mult = 0.3
+		building_urban_center_throughput_add = 0.2
+		building_power_plant_throughput_add = 1.5
+		building_electrics_industry_throughput_add = 1.25
+		building_art_academy_throughput_add = 1.0
+		building_university_throughput_add = 1.0
 	}
 
-	ai_will_do = {
-		always = no
+	ai_will_do = { always = no }
+	ai_weight = { value = 5 }
+}
+
+# 全球矿业资源集团：铁、煤、铅、硫与黄金
+company_global_mining_resources_group = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/mineral_smelting_corporation.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
+	flavored_company = yes
+
+	possible_prestige_goods = {
+		prestige_good_swedish_bar_iron
+		prestige_good_silesian_coal
+		prestige_good_rio_tinto_sulfur
+		prestige_good_broken_hill_lead
 	}
 
-	ai_weight = {
-		value = 5
+	building_types = {
+		building_iron_mine
+		building_coal_mine
+		building_sulfur_mine
+		building_lead_mine
 	}
+
+	extension_building_types = {
+		building_gold_mine
+	}
+
+	potential = {
+		always = yes
+	}
+
+	attainable = {
+		has_technology_researched = steelworking
+	}
+
+	possible = {
+		any_scope_state = {
+			any_scope_building = {
+				OR = {
+					is_building_type = building_iron_mine
+					is_building_type = building_coal_mine
+					is_building_type = building_sulfur_mine
+					is_building_type = building_lead_mine
+				}
+				level >= 5
+			}
+		}
+		has_technology_researched = steelworking
+	}
+
+	prosperity_modifier = {
+		building_group_bg_mining_throughput_add = 2.0
+		state_pollution_reduction_health_mult = -0.8
+	}
+
+	ai_will_do = { always = no }
+	ai_weight = { value = 5 }
 }

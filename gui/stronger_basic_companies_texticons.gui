@@ -1,0 +1,212 @@
+﻿# Inline text icons for Super Company custom prestige goods.
+# Keep each icon identifier and texture in sync with common/prestige_goods.
+
+texticon = {
+	icon = prestige_good_benz_automobiles
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_benz_automobiles.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = prestige_good_benz_engines
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_benz_engines.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = prestige_good_michelin_rubber
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_michelin_rubber.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = prestige_good_savile_row_suits
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_savile_row_suits.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = prestige_good_campbell_soup
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_campbell_soup.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = prestige_good_blue_mountain_coffee
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_blue_mountain_coffee.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = prestige_good_tiffany_glass
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_tiffany_glass.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = prestige_good_mauser_rifles
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_mauser_rifles.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = prestige_good_nobel_explosives
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_nobel_explosives.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = prestige_good_standard_oil
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/SOC_crown_oil.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = prestige_good_swiss_tools
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/victorinox.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = prestige_good_edison_electricity
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_edison_electricity.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = prestige_good_marconi_radio
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/unused/prestige_good_marconi_radio.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = prestige_good_silesian_coal
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_silesian_coal.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = prestige_good_rio_tinto_sulfur
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_rio_tinto_sulfur.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = prestige_good_broken_hill_lead
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_broken_hill_lead.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = prestige_good_prr_quick_transport
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/PRR_quick_transport.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = prestige_good_liquor_rum
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/rum.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = prestige_good_baltimore_clippers
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/Baltimore_clipper.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = prestige_good_winchester_ammunition
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/winchester_ammo.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = prestige_good_siberian_pine
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/siberian_pine.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}

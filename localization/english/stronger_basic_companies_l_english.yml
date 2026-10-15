@@ -10,51 +10,43 @@
  company_global_construction_group_desc: "An international real estate enterprise founded by Gustave Eiffel and Andrew Carnegie, focused on reinforced glass and stainless steel."
 
  company_military_industrial_complex: "Military Industrial Complex"
- company_military_industrial_complex_desc: "A professional weapons manufacturing enterprise founded by Alfred Krupp and Samuel Colt, producing automatic rifles and C4 explosives."
+ company_military_industrial_complex_desc: "An integrated arms and shipbuilding enterprise founded by Alfred Krupp and Samuel Colt, supplying weapons, ammunition, artillery, and modern vessels."
 
  company_petrochemical_giant: "Petrochemical Giant"
- company_petrochemical_giant_desc: "An advanced petroleum refining enterprise founded by John D. Rockefeller and Ludwig Nobel, providing high-quality refined petroleum products."
+ company_petrochemical_giant_desc: "An integrated petroleum, chemical, synthetic-material, and railway enterprise founded by John D. Rockefeller and Ludwig Nobel."
 
  company_international_financial_group: "International Financial Group"
- company_international_financial_group_desc: "A national-level financial institution founded by J.P. Morgan and Nathan Rothschild, providing comprehensive banking services and financial support."
+ company_international_financial_group_desc: "A financial and industrial group founded by J.P. Morgan and Nathan Rothschild, connecting capital with timber, paper, and tooling production."
 
  company_tech_industrial_group: "Tech Industrial Group"
- company_tech_industrial_group_desc: "A professional industrial and IT consulting enterprise founded by Thomas Edison and Guglielmo Marconi, providing electricity and radio products."
+ company_tech_industrial_group_desc: "A research-driven electrical group founded by Thomas Edison and Guglielmo Marconi, advancing power, electronics, radio, and higher education."
 
  # Prestige Goods
  prestige_good_benz_automobiles: "Benz Automobiles"
  prestige_good_benz_engines: "Benz Engines"
  prestige_good_michelin_rubber: "Michelin Rubber"
- prestige_good_savile_row_suits: "Savile Row Suits"
+ prestige_good_savile_row_suits: "Kyoto Kimonos"
  prestige_good_campbell_soup: "Campbell Soup"
  prestige_good_blue_mountain_coffee: "Blue Mountain Coffee"
  prestige_good_tiffany_glass: "Tiffany Glass"
- prestige_good_krupp_steel: "Krupp Steel"
  prestige_good_mauser_rifles: "Mauser Rifles"
  prestige_good_nobel_explosives: "Nobel Explosives"
  prestige_good_standard_oil: "Standard Oil"
- prestige_good_acid_free_paper: "Acid-Free Paper"
  prestige_good_swiss_tools: "Swiss Tools"
  prestige_good_edison_electricity: "Edison Electricity"
  prestige_good_marconi_radio: "Marconi Radio"
  prestige_good_prr_quick_transport: "High-Speed Rail"
  prestige_good_liquor_rum: "Rum"
  prestige_good_baltimore_clippers: "Baltimore Clippers"
- prestige_good_blackwell_frigates: "Blackwell Frigates"
  prestige_good_winchester_ammunition: "Winchester Ammunition"
  prestige_good_siberian_pine: "Siberian Pine"
 
 
- # Mineral Smelting Corporation
- company_mineral_smelting_corporation: "Mineral Smelting Corporation"
- company_mineral_smelting_corporation_desc: "A comprehensive mineral smelting enterprise founded by Tong King-sing and John D. Rockefeller, specializing in high-quality iron, coal, sulfur, and lead mining and smelting."
+ # Global Mining Resources Group
+ company_global_mining_resources_group: "Global Mining Resources Group"
+ company_global_mining_resources_group_desc: "An integrated mining enterprise specializing in large-scale iron, coal, sulfur, lead, and gold extraction."
 
- # Mineral Smelting Prestige Goods
- prestige_good_ural_iron: "Ural Iron"
+ # Mining Resources Prestige Goods
  prestige_good_rio_tinto_sulfur: "Rio Tinto Sulfur"
  prestige_good_broken_hill_lead: "Broken Hill Lead"
  prestige_good_silesian_coal: "Silesian Coal"
-
- # MTM La Maquinista Terrestre y Maritima
- company_la_maquinista_terrestre_y_maritima: "MTM La Maquinista Terrestre y Maritima"
- company_la_maquinista_terrestre_y_maritima_desc: "A heavy machinery manufacturing company based in Spain, specializing in the production of locomotives, naval vessels, and industrial equipment."

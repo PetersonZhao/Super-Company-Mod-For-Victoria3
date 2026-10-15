@@ -1,52 +1,39 @@
 ﻿l_french:
- # Entreprises de Base Renforc茅es
- company_global_automotive_industries: "Industries Automobiles Mondiales"
- company_global_automotive_industries_desc: "Une entreprise mondiale de fabrication automobile fond茅e par Henry Ford et Karl Benz, sp茅cialis茅e dans les voitures de luxe, les moteurs et les produits en caoutchouc."
+ company_global_automotive_industries: "Industries automobiles mondiales"
+ company_global_automotive_industries_desc: "Un groupe automobile mondial consacré aux voitures, aux moteurs et au caoutchouc."
+ company_international_commercial_group: "Groupe commercial international"
+ company_international_commercial_group_desc: "Un groupe commercial reliant l'agriculture, les biens de consommation et la logistique portuaire."
+ company_global_construction_group: "Groupe mondial de construction"
+ company_global_construction_group_desc: "Un groupe de construction intégré produisant acier, verre, explosifs et meubles."
+ company_military_industrial_complex: "Complexe militaro-industriel"
+ company_military_industrial_complex_desc: "Un groupe d'armement et de construction navale fournissant armes, munitions, artillerie et navires modernes."
+ company_petrochemical_giant: "Géant pétrochimique"
+ company_petrochemical_giant_desc: "Un groupe intégré de pétrole, chimie, matériaux synthétiques et chemins de fer."
+ company_international_financial_group: "Groupe financier international"
+ company_international_financial_group_desc: "Un groupe financier et industriel associant capitaux, bois, papier et outillage."
+ company_tech_industrial_group: "Groupe industriel technologique"
+ company_tech_industrial_group_desc: "Un groupe électrique axé sur la recherche, l'électronique, la radio et l'enseignement supérieur."
+ company_global_mining_resources_group: "Groupe mondial des ressources minières"
+ company_global_mining_resources_group_desc: "Une entreprise minière intégrée spécialisée dans l'extraction du fer, du charbon, du soufre, du plomb et de l'or."
 
- company_international_commercial_group: "Groupe Commercial International"
- company_international_commercial_group_desc: "Une cha卯ne de vente au d茅tail nationale fond茅e par John Wanamaker et Marshall Field, fournissant des uniformes premium, de la nourriture gastronomique et du caf茅 de qualit茅."
-
- company_global_construction_group: "Groupe de Construction Mondial"
- company_global_construction_group_desc: "Une entreprise immobili猫re internationale fond茅e par Gustave Eiffel et Andrew Carnegie, sp茅cialis茅e dans le verre renforc茅 et l'acier inoxydable."
-
- company_military_industrial_complex: "Complexe Militaro-Industriel"
- company_military_industrial_complex_desc: "Une entreprise professionnelle de fabrication d'armes fond茅e par Alfred Krupp et Samuel Colt, produisant des fusils automatiques et des explosifs C4."
-
- company_petrochemical_giant: "G茅ant P茅trochimique"
- company_petrochemical_giant_desc: "Une entreprise avanc茅e de raffinage p茅trolier fond茅e par John D. Rockefeller et Ludwig Nobel, fournissant des produits p茅troliers raffin茅s de haute qualit茅."
-
- company_international_financial_group: "Groupe Financier International"
- company_international_financial_group_desc: "Une institution financi猫re de niveau national fond茅e par J.P. Morgan et Nathan Rothschild, fournissant des services bancaires complets et un soutien financier."
-
- company_tech_industrial_group: "Groupe Industriel Technologique"
- company_tech_industrial_group_desc: "Une entreprise professionnelle de conseil industriel et informatique fond茅e par Thomas Edison et Guglielmo Marconi, fournissant des produits 茅lectriques et radio."
-
- # Prestige Goods
  prestige_good_benz_automobiles: "Automobiles Benz"
  prestige_good_benz_engines: "Moteurs Benz"
  prestige_good_michelin_rubber: "Caoutchouc Michelin"
- prestige_good_savile_row_suits: "Costumes Savile Row"
+ prestige_good_savile_row_suits: "Kimonos de Kyoto"
  prestige_good_campbell_soup: "Soupe Campbell"
- prestige_good_blue_mountain_coffee: "Caf茅 Blue Mountain"
+ prestige_good_blue_mountain_coffee: "Café Blue Mountain"
  prestige_good_tiffany_glass: "Verre Tiffany"
- prestige_good_krupp_steel: "Acier Krupp"
  prestige_good_mauser_rifles: "Fusils Mauser"
  prestige_good_nobel_explosives: "Explosifs Nobel"
- prestige_good_standard_oil: "Standard Oil"
- prestige_good_acid_free_paper: "Papier Sans Acide"
- prestige_good_swiss_tools: "Outils Suisses"
- prestige_good_edison_electricity: "脡lectricit茅 Edison"
+ prestige_good_standard_oil: "Pétrole Standard Oil"
+ prestige_good_swiss_tools: "Outils suisses"
+ prestige_good_edison_electricity: "Électricité Edison"
  prestige_good_marconi_radio: "Radio Marconi"
-
-
-
-
- # Corporation de Fusion Min茅rale
- company_mineral_smelting_corporation: "Corporation de Fusion Min茅rale"
- company_mineral_smelting_corporation_desc: "Une entreprise compl猫te de fusion min茅rale fond茅e par Tong King-sing et John D. Rockefeller, sp茅cialis茅e dans l'extraction et la fusion de fer, charbon, soufre et plomb de haute qualit茅."
-
- # Biens de Prestige de Fusion Min茅rale
- prestige_good_russia_iron: "Fer de l'Oural"
+ prestige_good_prr_quick_transport: "Transport ferroviaire rapide"
+ prestige_good_liquor_rum: "Rhum"
+ prestige_good_baltimore_clippers: "Clippers de Baltimore"
+ prestige_good_winchester_ammunition: "Munitions Winchester"
+ prestige_good_siberian_pine: "Pin de Sibérie"
  prestige_good_rio_tinto_sulfur: "Soufre de Rio Tinto"
  prestige_good_broken_hill_lead: "Plomb de Broken Hill"
- prestige_good_silesian_coal: "Charbon de Sil茅sie"
+ prestige_good_silesian_coal: "Charbon de Silésie"

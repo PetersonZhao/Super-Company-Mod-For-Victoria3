@@ -1,52 +1,39 @@
 ﻿l_german:
- # Verst盲rkte Grundunternehmen
- company_global_automotive_industries: "Weltweite Automobilindustrie"
- company_global_automotive_industries_desc: "Ein weltweites Automobilherstellungsunternehmen, gegr眉ndet von Henry Ford und Karl Benz, spezialisiert auf Luxusautos, Motoren und Gummiprodukte."
-
+ company_global_automotive_industries: "Globale Automobilindustrie"
+ company_global_automotive_industries_desc: "Ein globaler Automobilkonzern für Fahrzeuge, Motoren und Gummi."
  company_international_commercial_group: "Internationale Handelsgruppe"
- company_international_commercial_group_desc: "Eine landesweite Einzelhandelskette, gegr眉ndet von John Wanamaker und Marshall Field, die Premium-Uniformen, Gourmet-Lebensmittel und Qualit盲tskaffee anbietet."
-
- company_global_construction_group: "Weltweite Baugruppe"
- company_global_construction_group_desc: "Ein internationales Immobilienunternehmen, gegr眉ndet von Gustave Eiffel und Andrew Carnegie, spezialisiert auf verst盲rktes Glas und Edelstahl."
-
- company_military_industrial_complex: "Milit盲risch-Industrieller Komplex"
- company_military_industrial_complex_desc: "Ein professionelles Waffenherstellungsunternehmen, gegr眉ndet von Alfred Krupp und Samuel Colt, das automatische Gewehre und C4-Sprengstoffe produziert."
-
- company_petrochemical_giant: "Petrochemischer Riese"
- company_petrochemical_giant_desc: "Ein fortschrittliches Erd枚lraffinerieunternehmen, gegr眉ndet von John D. Rockefeller und Ludwig Nobel, das hochwertige raffinierte Erd枚lprodukte liefert."
-
+ company_international_commercial_group_desc: "Ein Handelskonzern, der Landwirtschaft, Konsumgüter und Hafenlogistik verbindet."
+ company_global_construction_group: "Globale Baugruppe"
+ company_global_construction_group_desc: "Ein integrierter Baukonzern für Stahl, Glas, Sprengstoffe und Möbel."
+ company_military_industrial_complex: "Militärisch-industrieller Komplex"
+ company_military_industrial_complex_desc: "Ein Rüstungs- und Schiffbaukonzern für Waffen, Munition, Artillerie und moderne Schiffe."
+ company_petrochemical_giant: "Petrochemischer Gigant"
+ company_petrochemical_giant_desc: "Ein integrierter Konzern für Erdöl, Chemie, synthetische Materialien und Eisenbahnen."
  company_international_financial_group: "Internationale Finanzgruppe"
- company_international_financial_group_desc: "Eine nationale Finanzinstitution, gegr眉ndet von J.P. Morgan und Nathan Rothschild, die umfassende Bankdienstleistungen und finanzielle Unterst眉tzung bietet."
-
+ company_international_financial_group_desc: "Ein Finanz- und Industriekonzern, der Kapital mit Holz-, Papier- und Werkzeugproduktion verbindet."
  company_tech_industrial_group: "Technologie-Industriegruppe"
- company_tech_industrial_group_desc: "Ein professionelles Industrie- und IT-Beratungsunternehmen, gegr眉ndet von Thomas Edison und Guglielmo Marconi, das Elektrizit盲ts- und Radioprodukte liefert."
+ company_tech_industrial_group_desc: "Ein forschungsorientierter Elektrokonzern für Strom, Elektronik, Funk und Hochschulen."
+ company_global_mining_resources_group: "Globale Bergbauressourcengruppe"
+ company_global_mining_resources_group_desc: "Ein integriertes Bergbauunternehmen für Eisen, Kohle, Schwefel, Blei und Gold."
 
- # Prestige Goods
- prestige_good_benz_automobiles: "Benz Automobile"
- prestige_good_benz_engines: "Benz Motoren"
- prestige_good_michelin_rubber: "Michelin Gummi"
- prestige_good_savile_row_suits: "Savile Row Anz眉ge"
- prestige_good_campbell_soup: "Campbell Suppe"
- prestige_good_blue_mountain_coffee: "Blue Mountain Kaffee"
- prestige_good_tiffany_glass: "Tiffany Glas"
- prestige_good_krupp_steel: "Krupp Stahl"
- prestige_good_mauser_rifles: "Mauser Gewehre"
- prestige_good_nobel_explosives: "Nobel Sprengstoffe"
+ prestige_good_benz_automobiles: "Benz-Automobile"
+ prestige_good_benz_engines: "Benz-Motoren"
+ prestige_good_michelin_rubber: "Michelin-Gummi"
+ prestige_good_savile_row_suits: "Kyoto-Kimonos"
+ prestige_good_campbell_soup: "Campbell-Suppe"
+ prestige_good_blue_mountain_coffee: "Blue-Mountain-Kaffee"
+ prestige_good_tiffany_glass: "Tiffany-Glas"
+ prestige_good_mauser_rifles: "Mauser-Gewehre"
+ prestige_good_nobel_explosives: "Nobel-Sprengstoffe"
  prestige_good_standard_oil: "Standard Oil"
- prestige_good_acid_free_paper: "S盲urefreies Papier"
  prestige_good_swiss_tools: "Schweizer Werkzeuge"
- prestige_good_edison_electricity: "Edison Elektrizit盲t"
- prestige_good_marconi_radio: "Marconi Radio"
-
-
-
-
- # Mineralverh眉ttungskorporation
- company_mineral_smelting_corporation: "Mineralverh眉ttungskorporation"
- company_mineral_smelting_corporation_desc: "Ein umfassendes Mineralverh眉ttungsunternehmen, gegr眉ndet von Tong King-sing und John D. Rockefeller, spezialisiert auf hochwertigen Eisen-, Kohle-, Schwefel- und Bleiabbau und -verh眉ttung."
-
- # Mineralverh眉ttung Prestigeg眉ter
- prestige_good_russia_iron: "Ural Eisen"
- prestige_good_rio_tinto_sulfur: "Rio Tinto Schwefel"
- prestige_good_broken_hill_lead: "Broken Hill Blei"
+ prestige_good_edison_electricity: "Edison-Elektrizität"
+ prestige_good_marconi_radio: "Marconi-Radio"
+ prestige_good_prr_quick_transport: "Schnelltransport"
+ prestige_good_liquor_rum: "Rum"
+ prestige_good_baltimore_clippers: "Baltimore-Klipper"
+ prestige_good_winchester_ammunition: "Winchester-Munition"
+ prestige_good_siberian_pine: "Sibirische Kiefer"
+ prestige_good_rio_tinto_sulfur: "Rio-Tinto-Schwefel"
+ prestige_good_broken_hill_lead: "Broken-Hill-Blei"
  prestige_good_silesian_coal: "Schlesische Kohle"

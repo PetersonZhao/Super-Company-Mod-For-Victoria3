@@ -1,0 +1,129 @@
+﻿namespace = super_company_founders
+
+# Run one day after establishment, after vanilla has finished creating the default executive.
+# The saved company scope travels with this event, so simultaneous foundations remain independent.
+super_company_founders.1 = {
+	type = country_event
+	hidden = yes
+
+	immediate = {
+		# A destroyed or transferred company must not leave behind an unattached founder.
+		# Keep this guard in immediate: even an explicitly triggered event must recheck its target.
+		if = {
+			limit = {
+				exists = scope:super_company_founding_company
+				any_company = {
+					this = scope:super_company_founding_company
+				}
+			}
+			religion = { save_scope_as = super_company_founder_religion }
+			super_company_founder_appoint = {
+				COMPANY = company_global_automotive_industries
+				TEMPLATE = super_company_carl_benz
+				CLAIMED = super_company_founder_benz_claimed
+				APPOINTED = super_company_founder_benz_appointed
+			}
+			super_company_founder_appoint = {
+				COMPANY = company_international_commercial_group
+				TEMPLATE = super_company_henry_john_heinz
+				CLAIMED = super_company_founder_heinz_claimed
+				APPOINTED = super_company_founder_heinz_appointed
+			}
+			super_company_founder_appoint = {
+				COMPANY = company_global_construction_group
+				TEMPLATE = super_company_alfred_nobel
+				CLAIMED = super_company_founder_nobel_claimed
+				APPOINTED = super_company_founder_nobel_appointed
+			}
+			super_company_founder_appoint = {
+				COMPANY = company_military_industrial_complex
+				TEMPLATE = super_company_hiram_stevens_maxim
+				CLAIMED = super_company_founder_maxim_claimed
+				APPOINTED = super_company_founder_maxim_appointed
+			}
+			super_company_founder_appoint = {
+				COMPANY = company_petrochemical_giant
+				TEMPLATE = super_company_carl_bosch
+				CLAIMED = super_company_founder_bosch_claimed
+				APPOINTED = super_company_founder_bosch_appointed
+			}
+			super_company_founder_appoint = {
+				COMPANY = company_international_financial_group
+				TEMPLATE = super_company_nathan_mayer_rothschild
+				CLAIMED = super_company_founder_rothschild_claimed
+				APPOINTED = super_company_founder_rothschild_appointed
+			}
+			super_company_founder_appoint = {
+				COMPANY = company_tech_industrial_group
+				TEMPLATE = super_company_gerard_philips
+				CLAIMED = super_company_founder_philips_claimed
+				APPOINTED = super_company_founder_philips_appointed
+			}
+			super_company_founder_appoint = {
+				COMPANY = company_global_mining_resources_group
+				TEMPLATE = super_company_august_thyssen
+				CLAIMED = super_company_founder_thyssen_claimed
+				APPOINTED = super_company_founder_thyssen_appointed
+			}
+		}
+	}
+}
+
+# Compatibility repair for saves with a generated founder but a failed company assignment.
+# No character creation occurs here. Confirmed appointments are never restored after succession.
+super_company_founders.2 = {
+	type = country_event
+	hidden = yes
+
+	immediate = {
+		super_company_founder_recover = {
+			COMPANY = company_global_automotive_industries
+			TEMPLATE = super_company_carl_benz
+			CLAIMED = super_company_founder_benz_claimed
+			APPOINTED = super_company_founder_benz_appointed
+		}
+		super_company_founder_recover = {
+			COMPANY = company_international_commercial_group
+			TEMPLATE = super_company_henry_john_heinz
+			CLAIMED = super_company_founder_heinz_claimed
+			APPOINTED = super_company_founder_heinz_appointed
+		}
+		super_company_founder_recover = {
+			COMPANY = company_global_construction_group
+			TEMPLATE = super_company_alfred_nobel
+			CLAIMED = super_company_founder_nobel_claimed
+			APPOINTED = super_company_founder_nobel_appointed
+		}
+		super_company_founder_recover = {
+			COMPANY = company_military_industrial_complex
+			TEMPLATE = super_company_hiram_stevens_maxim
+			CLAIMED = super_company_founder_maxim_claimed
+			APPOINTED = super_company_founder_maxim_appointed
+		}
+		super_company_founder_recover = {
+			COMPANY = company_petrochemical_giant
+			TEMPLATE = super_company_carl_bosch
+			CLAIMED = super_company_founder_bosch_claimed
+			APPOINTED = super_company_founder_bosch_appointed
+		}
+		super_company_founder_recover = {
+			COMPANY = company_international_financial_group
+			TEMPLATE = super_company_nathan_mayer_rothschild
+			CLAIMED = super_company_founder_rothschild_claimed
+			APPOINTED = super_company_founder_rothschild_appointed
+		}
+		super_company_founder_recover = {
+			COMPANY = company_tech_industrial_group
+			TEMPLATE = super_company_gerard_philips
+			CLAIMED = super_company_founder_philips_claimed
+			APPOINTED = super_company_founder_philips_appointed
+		}
+		super_company_founder_recover = {
+			COMPANY = company_global_mining_resources_group
+			TEMPLATE = super_company_august_thyssen
+			CLAIMED = super_company_founder_thyssen_claimed
+			APPOINTED = super_company_founder_thyssen_appointed
+		}
+	}
+}
+

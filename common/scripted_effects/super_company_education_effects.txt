@@ -1,0 +1,24 @@
+﻿# State scope. Never stack or refresh an existing permanent award.
+super_company_education_apply_to_state = {
+	if = {
+		limit = { super_company_education_state_eligible = yes }
+		add_modifier = {
+			name = super_company_education_network
+			days = -1
+		}
+	}
+}
+
+# Country scope. The saved unlock survives loss of prosperity and company dissolution.
+super_company_education_update_country = {
+	if = {
+		limit = { super_company_education_can_unlock = yes }
+		set_variable = super_company_education_unlocked
+	}
+	if = {
+		limit = { has_variable = super_company_education_unlocked }
+		every_scope_state = {
+			super_company_education_apply_to_state = yes
+		}
+	}
+}

@@ -1,0 +1,6 @@
+﻿# Permanent state modifier, separate from the company's temporary prosperity bonus.
+super_company_education_network = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	state_education_access_add = 0.50
+	state_literacy_growth_add = 0.001
+}

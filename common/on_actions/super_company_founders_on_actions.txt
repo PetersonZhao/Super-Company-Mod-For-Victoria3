@@ -1,0 +1,89 @@
+﻿# Append a custom action without replacing vanilla or another mod's establishment effects.
+# Vanilla supplies root = founding country and scope:company = newly established company.
+on_company_established = {
+	on_actions = {
+		super_company_founders_on_established
+	}
+}
+
+# Existing saves with the old failed appointment are repaired at the next monthly country pulse.
+# The repair event only reuses an existing founder; normal succession and untracked companies stay intact.
+on_monthly_pulse_country = {
+	on_actions = { super_company_founders_recovery_monthly }
+}
+
+super_company_founders_recovery_monthly = {
+	trigger = {
+		is_ai = no
+		any_character = {
+			NOT = { has_variable = super_company_founder_assignment_confirmed }
+			NOT = { has_role_of_type = executive }
+			OR = {
+				has_template = super_company_carl_benz
+				has_template = super_company_henry_john_heinz
+				has_template = super_company_alfred_nobel
+				has_template = super_company_hiram_stevens_maxim
+				has_template = super_company_carl_bosch
+				has_template = super_company_nathan_mayer_rothschild
+				has_template = super_company_gerard_philips
+				has_template = super_company_august_thyssen
+			}
+		}
+	}
+	events = { super_company_founders.2 }
+}
+
+super_company_founders_on_established = {
+	trigger = {
+		is_ai = no
+		exists = scope:company
+		scope:company = {
+			OR = {
+				is_company_type = company_type:company_global_automotive_industries
+				is_company_type = company_type:company_international_commercial_group
+				is_company_type = company_type:company_global_construction_group
+				is_company_type = company_type:company_military_industrial_complex
+				is_company_type = company_type:company_petrochemical_giant
+				is_company_type = company_type:company_international_financial_group
+				is_company_type = company_type:company_tech_industrial_group
+				is_company_type = company_type:company_global_mining_resources_group
+			}
+		}
+	}
+	effect = {
+		scope:company = { save_scope_as = super_company_founding_company }
+		super_company_founder_queue = {
+			COMPANY = company_global_automotive_industries
+			CLAIMED = super_company_founder_benz_claimed
+		}
+		super_company_founder_queue = {
+			COMPANY = company_international_commercial_group
+			CLAIMED = super_company_founder_heinz_claimed
+		}
+		super_company_founder_queue = {
+			COMPANY = company_global_construction_group
+			CLAIMED = super_company_founder_nobel_claimed
+		}
+		super_company_founder_queue = {
+			COMPANY = company_military_industrial_complex
+			CLAIMED = super_company_founder_maxim_claimed
+		}
+		super_company_founder_queue = {
+			COMPANY = company_petrochemical_giant
+			CLAIMED = super_company_founder_bosch_claimed
+		}
+		super_company_founder_queue = {
+			COMPANY = company_international_financial_group
+			CLAIMED = super_company_founder_rothschild_claimed
+		}
+		super_company_founder_queue = {
+			COMPANY = company_tech_industrial_group
+			CLAIMED = super_company_founder_philips_claimed
+		}
+		super_company_founder_queue = {
+			COMPANY = company_global_mining_resources_group
+			CLAIMED = super_company_founder_thyssen_claimed
+		}
+	}
+}
+

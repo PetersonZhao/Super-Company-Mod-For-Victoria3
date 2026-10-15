@@ -1,0 +1,29 @@
+﻿# Append custom actions without overriding vanilla triggers or effects.
+# Monthly checks also initialize existing saves and catch newly acquired states.
+on_monthly_pulse_country = {
+	on_actions = { super_company_education_monthly }
+}
+
+super_company_education_monthly = {
+	trigger = {
+		OR = {
+			has_variable = super_company_education_unlocked
+			super_company_education_can_unlock = yes
+		}
+	}
+	effect = { super_company_education_update_country = yes }
+}
+
+# State scope. Apply promptly on incorporation or acquisition when already eligible.
+on_state_incorporation = {
+	on_actions = { super_company_education_on_state_changed }
+}
+
+on_state_owner_change = {
+	on_actions = { super_company_education_on_state_changed }
+}
+
+super_company_education_on_state_changed = {
+	trigger = { super_company_education_state_eligible = yes }
+	effect = { super_company_education_apply_to_state = yes }
+}

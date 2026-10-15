@@ -1,5 +1,17 @@
 # Super Company - Changelog
 
+## Unreleased - Founding Executive Assignment Fix
+
+- Fixed founder appointment losing the company scope inside `create_character.on_created`; save the new character and assign it in the caller's event context instead.
+- Confirm the company's actual executive before recording a successful appointment.
+- Added a monthly compatibility repair that reuses an already-generated, unassigned founder from affected saves without creating duplicates or undoing normal succession.
+
+## Unreleased - Permanent Education Network
+
+- Added a permanent Universal Education Network unlocked at the monthly country check when the player's International Commercial Group is prosperous.
+- Each owned incorporated state receives +50 percentage points of education access and +0.10% literacy growth exactly once, including later incorporations and acquisitions. The unlock and awards survive loss of prosperity and company dissolution.
+- Added Simplified Chinese and English descriptions and appended compatible monthly, incorporation, and ownership-change actions.
+
 ## Version 2.0.0 - Victoria 3 1.13 Rebalance
 
 - Consolidated the roster to eight companies, renamed the mining company's internal key to match its role, and removed MTM without a legacy-save compatibility shell.

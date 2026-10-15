@@ -1,25 +1,25 @@
 ﻿l_english:
  # Stronger Basic Companies
  company_global_automotive_industries: "Global Automotive Industries"
- company_global_automotive_industries_desc: "A global automotive manufacturing enterprise founded by Henry Ford and Karl Benz, focused on luxury cars, engines, and rubber products."
+ company_global_automotive_industries_desc: "A global automotive manufacturing enterprise founded by Carl Benz, integrating rubber, engines, and automobile production."
 
  company_international_commercial_group: "International Commercial Group"
- company_international_commercial_group_desc: "A nationwide retail chain founded by John Wanamaker and Marshall Field, providing premium uniforms, gourmet food, and quality coffee."
+ company_international_commercial_group_desc: "An international commercial group founded by Henry John Heinz, connecting agriculture, fisheries, food, textiles, and port logistics. Once prosperous at a monthly check, permanently unlocks a Universal Education Network: all owned incorporated states gain +50 percentage points of education access and +0.10% literacy growth, including states incorporated later."
 
  company_global_construction_group: "Global Construction Group"
- company_global_construction_group_desc: "An international real estate enterprise founded by Gustave Eiffel and Andrew Carnegie, focused on reinforced glass and stainless steel."
+ company_global_construction_group_desc: "An integrated construction group founded by Alfred Nobel, combining steel, glass, explosives, furniture, and large engineering projects."
 
  company_military_industrial_complex: "Military Industrial Complex"
- company_military_industrial_complex_desc: "An integrated arms and shipbuilding enterprise founded by Alfred Krupp and Samuel Colt, supplying weapons, ammunition, artillery, and modern vessels."
+ company_military_industrial_complex_desc: "An integrated arms and shipbuilding enterprise founded by Hiram Stevens Maxim, supplying weapons, ammunition, artillery, and modern vessels."
 
  company_petrochemical_giant: "Petrochemical Giant"
- company_petrochemical_giant_desc: "An integrated petroleum, chemical, synthetic-material, and railway enterprise founded by John D. Rockefeller and Ludwig Nobel."
+ company_petrochemical_giant_desc: "An integrated petroleum, chemical, synthetic-material, and railway enterprise founded by Carl Bosch."
 
  company_international_financial_group: "International Financial Group"
- company_international_financial_group_desc: "A financial and industrial group founded by J.P. Morgan and Nathan Rothschild, connecting capital with timber, paper, and tooling production."
+ company_international_financial_group_desc: "A financial and industrial group founded by Nathan Mayer Rothschild, connecting capital with timber, paper, and tooling production."
 
  company_tech_industrial_group: "Tech Industrial Group"
- company_tech_industrial_group_desc: "A research-driven electrical group founded by Thomas Edison and Guglielmo Marconi, advancing power, electronics, radio, and higher education."
+ company_tech_industrial_group_desc: "A research-driven electrical group founded by Gerard Philips, advancing power, electronics, radio, and higher education."
 
  # Prestige Goods
  prestige_good_benz_automobiles: "Benz Automobiles"
@@ -44,7 +44,7 @@
 
  # Global Mining Resources Group
  company_global_mining_resources_group: "Global Mining Resources Group"
- company_global_mining_resources_group_desc: "An integrated mining enterprise specializing in large-scale iron, coal, sulfur, lead, and gold extraction."
+ company_global_mining_resources_group_desc: "An integrated mining enterprise founded by August Thyssen, specializing in large-scale iron, coal, sulfur, lead, and gold extraction."
 
  # Mining Resources Prestige Goods
  prestige_good_rio_tinto_sulfur: "Rio Tinto Sulfur"

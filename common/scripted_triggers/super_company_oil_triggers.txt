@@ -1,0 +1,38 @@
+# Country scope. The company must actually exist in this country.
+super_company_oil_country_eligible = {
+	is_player = yes
+	any_company = {
+		is_company_type = company_type:company_petrochemical_giant
+	}
+}
+
+# State scope. Resource potentials belong to the state region, so exclude split states.
+# Check ownership separately against the event's ROOT country when using saved states.
+super_company_oil_state_eligible = {
+	is_incorporated = yes
+	is_split_state = no
+}
+
+# Country scope. The year is recorded when the offer appears, including if skipped.
+super_company_oil_can_start = {
+	super_company_oil_country_eligible = yes
+	NOT = { has_variable = super_company_oil_pending }
+	OR = {
+		NOT = { has_variable = super_company_oil_last_year }
+		var:super_company_oil_last_year < year
+	}
+	any_scope_state = {
+		super_company_oil_state_eligible = yes
+	}
+}
+
+# Country scope; used both by the button and by the effect immediately before granting resources.
+super_company_oil_can_confirm = {
+	has_variable = super_company_oil_pending
+	super_company_oil_country_eligible = yes
+	exists = scope:super_company_oil_selected_state
+	scope:super_company_oil_selected_state = {
+		owner = root
+		super_company_oil_state_eligible = yes
+	}
+}

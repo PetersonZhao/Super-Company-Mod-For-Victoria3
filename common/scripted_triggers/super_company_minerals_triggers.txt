@@ -1,0 +1,50 @@
+# Country scope. The company must actually exist in this country.
+super_company_minerals_country_eligible = {
+	is_player = yes
+	any_company = {
+		is_company_type = company_type:company_global_mining_resources_group
+	}
+}
+
+# State scope. Resource potentials belong to the state region, so exclude split states.
+# Check ownership separately against the event's ROOT country when using saved states.
+super_company_minerals_state_eligible = {
+	is_incorporated = yes
+	is_split_state = no
+}
+
+# Country scope. The year is recorded when the offer appears, including if skipped.
+super_company_minerals_can_start = {
+	super_company_minerals_country_eligible = yes
+	NOT = { has_variable = super_company_minerals_pending }
+	OR = {
+		NOT = { has_variable = super_company_minerals_last_year }
+		var:super_company_minerals_last_year < year
+	}
+	any_scope_state = {
+		super_company_minerals_state_eligible = yes
+	}
+}
+
+# Country scope; used both by the button and by the effect immediately before granting resources.
+super_company_minerals_target_eligible = {
+	has_variable = super_company_minerals_pending
+	super_company_minerals_country_eligible = yes
+	exists = scope:super_company_minerals_selected_state
+	scope:super_company_minerals_selected_state = {
+		owner = root
+		super_company_minerals_state_eligible = yes
+	}
+}
+
+# Country scope. Only one of these five resource choices can ever be paid out.
+super_company_minerals_can_confirm = {
+	super_company_minerals_target_eligible = yes
+	OR = {
+		var:super_company_minerals_resource = 1
+		var:super_company_minerals_resource = 2
+		var:super_company_minerals_resource = 3
+		var:super_company_minerals_resource = 4
+		var:super_company_minerals_resource = 5
+	}
+}

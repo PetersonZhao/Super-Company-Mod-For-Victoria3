@@ -1,25 +1,25 @@
 ﻿l_simp_chinese:
  # 强化基础公司
  company_global_automotive_industries: "全球汽车工业集团"
- company_global_automotive_industries_desc: "由亨利·福特和卡尔·本茨创办的全球性汽车制造企业，专注于高端汽车、发动机和橡胶产品的生产。"
+ company_global_automotive_industries_desc: "由卡尔·本茨创办的全球性汽车制造企业，整合橡胶、发动机与汽车生产。"
 
  company_international_commercial_group: "国际商业集团"
- company_international_commercial_group_desc: "由约翰·沃纳梅克和马歇尔·菲尔德创办的全国性零售连锁企业，提供高端制服、精致食品和优质咖啡。"
+ company_international_commercial_group_desc: "由亨利·约翰·亨氏创办的国际商业集团，连接农牧渔业、食品、纺织与港口物流。繁荣后在每月检查时永久解锁全民教育网络：本国所有已整合州获得受教育机会+50个百分点、识字率增长+0.10%的永久修正，之后新整合的州也会获得。"
 
  company_global_construction_group: "环球建设集团"
- company_global_construction_group_desc: "由古斯塔夫·埃菲尔和安德鲁·卡内基创办的国际性房地产企业，专注于强化玻璃和不锈钢的生产。"
+ company_global_construction_group_desc: "由阿尔弗雷德·诺贝尔创办的综合建设集团，整合钢铁、玻璃、炸药、家具与工程建设。"
 
  company_military_industrial_complex: "军工联合体"
- company_military_industrial_complex_desc: "由阿尔弗雷德·克虏伯和塞缪尔·柯尔特创办的综合军工与造船企业，供应武器、弹药、火炮和现代舰船。"
+ company_military_industrial_complex_desc: "由海勒姆·史蒂文斯·马克沁创办的综合军工与造船企业，供应武器、弹药、火炮和现代舰船。"
 
  company_petrochemical_giant: "石油化工巨头"
- company_petrochemical_giant_desc: "由约翰·D·洛克菲勒和路德维希·诺贝尔创办的石油、化工、合成材料与铁路综合企业。"
+ company_petrochemical_giant_desc: "由卡尔·博世创办的石油、化工、合成材料与铁路综合企业。"
 
  company_international_financial_group: "国际金融集团"
- company_international_financial_group_desc: "由J·P·摩根和内森·罗斯柴尔德创办的金融工业集团，将资本与木材、纸张和工具生产相结合。"
+ company_international_financial_group_desc: "由内森·迈耶·罗斯柴尔德创办的金融工业集团，将资本与木材、纸张和工具生产相结合。"
 
  company_tech_industrial_group: "科技工业集团"
- company_tech_industrial_group_desc: "由托马斯·爱迪生和古列尔莫·马可尼创办的科研型电气集团，推动电力、电子、无线电和高等教育发展。"
+ company_tech_industrial_group_desc: "由杰拉德·飞利浦创办的科研型电气集团，推动电力、电子、无线电和高等教育发展。"
 
  # 名贵商品
  prestige_good_benz_automobiles: "奔驰汽车"
@@ -43,7 +43,7 @@
 
  # 全球矿业资源集团
  company_global_mining_resources_group: "全球矿业资源集团"
- company_global_mining_resources_group_desc: "专注于铁矿、煤炭、硫矿、铅矿和金矿规模化开采的综合矿业企业。"
+ company_global_mining_resources_group_desc: "由奥古斯特·蒂森创办的综合矿业企业，专注于铁矿、煤炭、硫矿、铅矿和金矿的规模化开采。"
 
  # 矿业资源名贵商品
  prestige_good_rio_tinto_sulfur: "力拓硫矿"

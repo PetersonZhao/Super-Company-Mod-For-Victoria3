@@ -1,0 +1,345 @@
+namespace = super_company_minerals
+
+# The yearly proposal. Expiry always chooses postponement.
+super_company_minerals.1 = {
+	type = country_event
+	placement = root
+	title = super_company_minerals.1.t
+	desc = super_company_minerals.1.d
+	flavor = super_company_minerals.1.f
+	event_image = { video = "ip4_mining_scene" }
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	duration = 3
+
+	trigger = {
+		super_company_minerals_can_start = yes
+	}
+	immediate = {
+		super_company_minerals_begin = yes
+	}
+
+	option = {
+		name = super_company_minerals.1.a
+		trigger = {
+			super_company_minerals_country_eligible = yes
+			any_scope_state = { super_company_minerals_state_eligible = yes }
+		}
+		custom_tooltip = super_company_minerals_choose_tt
+		hidden_effect = {
+			super_company_minerals_build_state_list = yes
+			trigger_event = { id = super_company_minerals.2 }
+		}
+	}
+	option = {
+		name = super_company_minerals.cancel
+		default_option = yes
+		custom_tooltip = super_company_minerals_cancel_tt
+		hidden_effect = { super_company_minerals_finish = yes }
+	}
+}
+
+# Only event-local scopes name the buttons. Clear and repopulate them on every page.
+super_company_minerals.2 = {
+	type = country_event
+	placement = root
+	title = super_company_minerals.2.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { exists = scope:super_company_minerals_state_1 }
+				desc = super_company_minerals.2.d
+			}
+			triggered_desc = {
+				trigger = { always = yes }
+				desc = super_company_minerals.2.empty.d
+			}
+		}
+	}
+	flavor = super_company_minerals.2.f
+	event_image = { video = "ip4_mining_scene" }
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	duration = 3
+
+	# Keep cancellation available even if the company is dissolved while choosing.
+	trigger = { has_variable = super_company_minerals_pending }
+	immediate = { super_company_minerals_prepare_page = yes }
+
+	option = {
+		name = super_company_minerals.2.state_1
+		trigger = {
+			super_company_minerals_country_eligible = yes
+			exists = scope:super_company_minerals_state_1
+			scope:super_company_minerals_state_1 = {
+				owner = root
+				super_company_minerals_state_eligible = yes
+			}
+		}
+		custom_tooltip = super_company_minerals_preview_tt
+		hidden_effect = {
+			scope:super_company_minerals_state_1 = {
+				save_scope_as = super_company_minerals_selected_state
+			}
+			trigger_event = { id = super_company_minerals.4 }
+		}
+	}
+	option = {
+		name = super_company_minerals.2.state_2
+		trigger = {
+			super_company_minerals_country_eligible = yes
+			exists = scope:super_company_minerals_state_2
+			scope:super_company_minerals_state_2 = {
+				owner = root
+				super_company_minerals_state_eligible = yes
+			}
+		}
+		custom_tooltip = super_company_minerals_preview_tt
+		hidden_effect = {
+			scope:super_company_minerals_state_2 = {
+				save_scope_as = super_company_minerals_selected_state
+			}
+			trigger_event = { id = super_company_minerals.4 }
+		}
+	}
+	option = {
+		name = super_company_minerals.2.state_3
+		trigger = {
+			super_company_minerals_country_eligible = yes
+			exists = scope:super_company_minerals_state_3
+			scope:super_company_minerals_state_3 = {
+				owner = root
+				super_company_minerals_state_eligible = yes
+			}
+		}
+		custom_tooltip = super_company_minerals_preview_tt
+		hidden_effect = {
+			scope:super_company_minerals_state_3 = {
+				save_scope_as = super_company_minerals_selected_state
+			}
+			trigger_event = { id = super_company_minerals.4 }
+		}
+	}
+	option = {
+		name = super_company_minerals.2.state_4
+		trigger = {
+			super_company_minerals_country_eligible = yes
+			exists = scope:super_company_minerals_state_4
+			scope:super_company_minerals_state_4 = {
+				owner = root
+				super_company_minerals_state_eligible = yes
+			}
+		}
+		custom_tooltip = super_company_minerals_preview_tt
+		hidden_effect = {
+			scope:super_company_minerals_state_4 = {
+				save_scope_as = super_company_minerals_selected_state
+			}
+			trigger_event = { id = super_company_minerals.4 }
+		}
+	}
+	option = {
+		name = super_company_minerals.previous
+		trigger = {
+			super_company_minerals_country_eligible = yes
+			var:super_company_minerals_offset >= 4
+		}
+		custom_tooltip = super_company_minerals_page_tt
+		hidden_effect = {
+			change_variable = { name = super_company_minerals_offset add = -4 }
+			trigger_event = { id = super_company_minerals.2 }
+		}
+	}
+	option = {
+		name = super_company_minerals.next
+		trigger = {
+			super_company_minerals_country_eligible = yes
+			has_variable = super_company_minerals_has_next
+		}
+		custom_tooltip = super_company_minerals_page_tt
+		hidden_effect = {
+			change_variable = { name = super_company_minerals_offset add = 4 }
+			trigger_event = { id = super_company_minerals.2 }
+		}
+	}
+	option = {
+		name = super_company_minerals.cancel
+		default_option = yes
+		custom_tooltip = super_company_minerals_cancel_tt
+		hidden_effect = { super_company_minerals_finish = yes }
+	}
+}
+
+# No resource changes until the player explicitly confirms this final event.
+super_company_minerals.3 = {
+	type = country_event
+	placement = root
+	title = super_company_minerals.3.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					super_company_minerals_can_confirm = yes
+					var:super_company_minerals_resource = 1
+				}
+				desc = super_company_minerals.3.iron.d
+			}
+			triggered_desc = {
+				trigger = {
+					super_company_minerals_can_confirm = yes
+					var:super_company_minerals_resource = 2
+				}
+				desc = super_company_minerals.3.coal.d
+			}
+			triggered_desc = {
+				trigger = {
+					super_company_minerals_can_confirm = yes
+					var:super_company_minerals_resource = 3
+				}
+				desc = super_company_minerals.3.lead.d
+			}
+			triggered_desc = {
+				trigger = {
+					super_company_minerals_can_confirm = yes
+					var:super_company_minerals_resource = 4
+				}
+				desc = super_company_minerals.3.sulfur.d
+			}
+			triggered_desc = {
+				trigger = {
+					super_company_minerals_can_confirm = yes
+					var:super_company_minerals_resource = 5
+				}
+				desc = super_company_minerals.3.gold.d
+			}
+			triggered_desc = {
+				trigger = { always = yes }
+				desc = super_company_minerals.3.invalid.d
+			}
+		}
+	}
+	flavor = super_company_minerals.3.f
+	event_image = { video = "ip4_mining_scene" }
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	duration = 3
+	trigger = { has_variable = super_company_minerals_pending }
+
+	option = {
+		name = super_company_minerals.3.a
+		trigger = { super_company_minerals_can_confirm = yes }
+		highlighted_option = yes
+		custom_tooltip = {
+			text = super_company_minerals_gain_tt
+			super_company_minerals_apply = yes
+		}
+		hidden_effect = { super_company_minerals_finish = yes }
+	}
+	option = {
+		name = super_company_minerals.change_resource
+		trigger = { super_company_minerals_target_eligible = yes }
+		custom_tooltip = super_company_minerals_resource_choice_tt
+		hidden_effect = { trigger_event = { id = super_company_minerals.4 } }
+	}
+	option = {
+		name = super_company_minerals.back
+		trigger = { super_company_minerals_country_eligible = yes }
+		custom_tooltip = super_company_minerals_page_tt
+		hidden_effect = { trigger_event = { id = super_company_minerals.2 } }
+	}
+	option = {
+		name = super_company_minerals.cancel
+		default_option = yes
+		custom_tooltip = super_company_minerals_cancel_tt
+		hidden_effect = { super_company_minerals_finish = yes }
+	}
+}
+
+# State selection precedes mineral choice, so a different state or resource can be reviewed.
+super_company_minerals.4 = {
+	type = country_event
+	placement = root
+	title = super_company_minerals.4.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { super_company_minerals_target_eligible = yes }
+				desc = super_company_minerals.4.d
+			}
+			triggered_desc = {
+				trigger = { always = yes }
+				desc = super_company_minerals.4.invalid.d
+			}
+		}
+	}
+	flavor = super_company_minerals.4.f
+	event_image = { video = "ip4_mining_scene" }
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	duration = 3
+	trigger = { has_variable = super_company_minerals_pending }
+	immediate = { remove_variable = super_company_minerals_resource }
+
+	option = {
+		name = super_company_minerals.4.iron
+		trigger = { super_company_minerals_target_eligible = yes }
+		custom_tooltip = super_company_minerals_select_iron_tt
+		hidden_effect = {
+			set_variable = { name = super_company_minerals_resource value = 1 }
+			trigger_event = { id = super_company_minerals.3 }
+		}
+	}
+
+	option = {
+		name = super_company_minerals.4.coal
+		trigger = { super_company_minerals_target_eligible = yes }
+		custom_tooltip = super_company_minerals_select_coal_tt
+		hidden_effect = {
+			set_variable = { name = super_company_minerals_resource value = 2 }
+			trigger_event = { id = super_company_minerals.3 }
+		}
+	}
+
+	option = {
+		name = super_company_minerals.4.lead
+		trigger = { super_company_minerals_target_eligible = yes }
+		custom_tooltip = super_company_minerals_select_lead_tt
+		hidden_effect = {
+			set_variable = { name = super_company_minerals_resource value = 3 }
+			trigger_event = { id = super_company_minerals.3 }
+		}
+	}
+
+	option = {
+		name = super_company_minerals.4.sulfur
+		trigger = { super_company_minerals_target_eligible = yes }
+		custom_tooltip = super_company_minerals_select_sulfur_tt
+		hidden_effect = {
+			set_variable = { name = super_company_minerals_resource value = 4 }
+			trigger_event = { id = super_company_minerals.3 }
+		}
+	}
+
+	option = {
+		name = super_company_minerals.4.gold
+		trigger = { super_company_minerals_target_eligible = yes }
+		custom_tooltip = super_company_minerals_select_gold_tt
+		hidden_effect = {
+			set_variable = { name = super_company_minerals_resource value = 5 }
+			trigger_event = { id = super_company_minerals.3 }
+		}
+	}
+
+	option = {
+		name = super_company_minerals.back
+		trigger = { super_company_minerals_country_eligible = yes }
+		custom_tooltip = super_company_minerals_page_tt
+		hidden_effect = { trigger_event = { id = super_company_minerals.2 } }
+	}
+	option = {
+		name = super_company_minerals.cancel
+		default_option = yes
+		custom_tooltip = super_company_minerals_cancel_tt
+		hidden_effect = { super_company_minerals_finish = yes }
+	}
+}

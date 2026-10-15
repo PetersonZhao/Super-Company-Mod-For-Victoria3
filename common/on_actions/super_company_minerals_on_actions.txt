@@ -1,0 +1,16 @@
+# Append a custom action; do not redefine the vanilla pulse's trigger or effect.
+on_yearly_pulse_country = {
+	on_actions = {
+		super_company_minerals_yearly
+	}
+}
+
+super_company_minerals_yearly = {
+	trigger = {
+		super_company_minerals_can_start = yes
+	}
+
+	events = {
+		super_company_minerals.1
+	}
+}

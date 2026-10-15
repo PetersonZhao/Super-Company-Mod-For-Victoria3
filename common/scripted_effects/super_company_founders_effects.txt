@@ -1,0 +1,109 @@
+﻿# Character scope. Explicit effects bypass the normal two-personality-trait growth limit.
+super_company_founder_add_traits = {
+	add_trait = charismatic
+	add_trait = meticulous
+	add_trait = innovative
+	add_trait = persistent
+	add_trait = expert_entrepreneur
+	add_trait = imposing
+}
+
+# Country scope, with the newly established company saved by the on_action.
+# Claim before scheduling: duplicate hooks and dissolution/re-establishment cannot queue another founder.
+# Global flags make each historical founder a once-per-campaign appointment, even across countries.
+super_company_founder_queue = {
+	if = {
+		limit = {
+			scope:super_company_founding_company = {
+				is_company_type = company_type:$COMPANY$
+			}
+			NOT = { has_global_variable = $CLAIMED$ }
+		}
+		set_global_variable = $CLAIMED$
+		trigger_event = { id = super_company_founders.1 days = 1 }
+	}
+}
+
+# Character scope in the caller's event context, with BOTH company and character scopes saved.
+# create_character's on_created callback does not retain the caller's company scope.
+# Only record success after checking the company's actual executive, not merely character creation.
+super_company_founder_assign = {
+	set_character_as_executive = scope:super_company_founding_company
+	if = {
+		limit = {
+			scope:super_company_founding_company = {
+				exists = executive
+				executive = { this = scope:super_company_new_founder }
+			}
+		}
+		set_variable = super_company_founder_assignment_confirmed
+		set_global_variable = $APPOINTED$
+	}
+}
+
+# Country scope. The hidden event already checked that this country still owns the saved company.
+# APPOINTED is separate from CLAIMED so re-entering the delayed event cannot clone the character.
+super_company_founder_appoint = {
+	if = {
+		limit = {
+			scope:super_company_founding_company = {
+				is_company_type = company_type:$COMPANY$
+			}
+			has_global_variable = $CLAIMED$
+			NOT = { has_global_variable = $APPOINTED$ }
+		}
+		# Reuse a previously created candidate if a failed assignment is retried.
+		if = {
+			limit = { any_character = { has_template = $TEMPLATE$ } }
+			random_character = {
+				limit = { has_template = $TEMPLATE$ }
+				save_scope_as = super_company_new_founder
+			}
+		}
+		else = {
+			create_character = {
+				template = $TEMPLATE$
+				save_scope_as = super_company_new_founder
+			}
+			scope:super_company_new_founder = {
+				super_company_founder_add_traits = yes
+			}
+		}
+		scope:super_company_new_founder = {
+			super_company_founder_assign = { APPOINTED = $APPOINTED$ }
+		}
+	}
+}
+
+# Country scope. Repair only characters created by the broken callback implementation.
+# Reuse the living, unassigned template character; never create another or reinstate a retired founder.
+super_company_founder_recover = {
+	if = {
+		limit = {
+			has_global_variable = $CLAIMED$
+			has_global_variable = $APPOINTED$
+			any_company = { is_company_type = company_type:$COMPANY$ }
+			any_character = {
+				has_template = $TEMPLATE$
+				NOT = { has_variable = super_company_founder_assignment_confirmed }
+				NOT = { has_role_of_type = executive }
+			}
+		}
+		random_company = {
+			limit = { is_company_type = company_type:$COMPANY$ }
+			save_scope_as = super_company_founding_company
+		}
+		random_character = {
+			limit = {
+				has_template = $TEMPLATE$
+				NOT = { has_variable = super_company_founder_assignment_confirmed }
+				NOT = { has_role_of_type = executive }
+			}
+			save_scope_as = super_company_new_founder
+		}
+		scope:super_company_new_founder = {
+			super_company_founder_assign = { APPOINTED = $APPOINTED$ }
+		}
+	}
+}
+

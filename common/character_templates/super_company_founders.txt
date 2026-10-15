@@ -1,0 +1,149 @@
+﻿# Only the establishment event creates these templates; there are no automatic usage rules.
+# The event snapshots the appointing country's state religion before creating a character.
+# Start as a normal politician; set_character_as_executive attaches the company and its role.
+# Empty trait generation suppresses vanilla's initial random traits. Six traits are added explicitly.
+
+# Carl Benz; historical birthplace: Karlsruhe.
+super_company_carl_benz = {
+	first_name = super_company_founder_first_carl
+	last_name = super_company_founder_last_benz
+	historical = yes
+	female = no
+	age = 18
+	culture = primary_culture
+	religion = scope:super_company_founder_religion
+	home_region = STATE_BADEN
+	dna = random
+	interest_group = ig_intelligentsia
+	ideology = ideology_moderate
+	role = character_role_politician
+	traits = { }
+	trait_generation = { }
+}
+
+# Henry John Heinz; historical birthplace: Pittsburgh.
+super_company_henry_john_heinz = {
+	first_name = super_company_founder_first_henry_john
+	last_name = super_company_founder_last_heinz
+	historical = yes
+	female = no
+	age = 18
+	culture = primary_culture
+	religion = scope:super_company_founder_religion
+	home_region = STATE_PENNSYLVANIA
+	dna = random
+	interest_group = ig_intelligentsia
+	ideology = ideology_moderate
+	role = character_role_politician
+	traits = { }
+	trait_generation = { }
+}
+
+# Alfred Nobel; historical birthplace: Stockholm.
+super_company_alfred_nobel = {
+	first_name = super_company_founder_first_alfred
+	last_name = super_company_founder_last_nobel
+	historical = yes
+	female = no
+	age = 18
+	culture = primary_culture
+	religion = scope:super_company_founder_religion
+	home_region = STATE_SVEALAND
+	dna = random
+	interest_group = ig_intelligentsia
+	ideology = ideology_moderate
+	role = character_role_politician
+	traits = { }
+	trait_generation = { }
+}
+
+# Hiram Stevens Maxim; historical birthplace: Brockway's Mills, near Sangerville.
+super_company_hiram_stevens_maxim = {
+	first_name = super_company_founder_first_hiram_stevens
+	last_name = super_company_founder_last_maxim
+	historical = yes
+	female = no
+	age = 18
+	culture = primary_culture
+	religion = scope:super_company_founder_religion
+	home_region = STATE_MAINE
+	dna = random
+	interest_group = ig_intelligentsia
+	ideology = ideology_moderate
+	role = character_role_politician
+	traits = { }
+	trait_generation = { }
+}
+
+# Carl Bosch; historical birthplace: Cologne.
+super_company_carl_bosch = {
+	first_name = super_company_founder_first_carl
+	last_name = super_company_founder_last_bosch
+	historical = yes
+	female = no
+	age = 18
+	culture = primary_culture
+	religion = scope:super_company_founder_religion
+	home_region = STATE_NORTH_RHINE
+	dna = random
+	interest_group = ig_intelligentsia
+	ideology = ideology_moderate
+	role = character_role_politician
+	traits = { }
+	trait_generation = { }
+}
+
+# Nathan Mayer Rothschild; historical birthplace: Frankfurt am Main.
+super_company_nathan_mayer_rothschild = {
+	first_name = super_company_founder_first_nathan_mayer
+	last_name = super_company_founder_last_rothschild
+	historical = yes
+	female = no
+	age = 18
+	culture = primary_culture
+	religion = scope:super_company_founder_religion
+	home_region = STATE_HESSE
+	dna = random
+	interest_group = ig_intelligentsia
+	ideology = ideology_moderate
+	role = character_role_politician
+	traits = { }
+	trait_generation = { }
+}
+
+# Gerard Philips; historical birthplace: Zaltbommel.
+super_company_gerard_philips = {
+	first_name = super_company_founder_first_gerard
+	last_name = super_company_founder_last_philips
+	historical = yes
+	female = no
+	age = 18
+	culture = primary_culture
+	religion = scope:super_company_founder_religion
+	home_region = STATE_GELRE
+	dna = random
+	interest_group = ig_intelligentsia
+	ideology = ideology_moderate
+	role = character_role_politician
+	traits = { }
+	trait_generation = { }
+}
+
+# August Thyssen; historical birthplace: Eschweiler, near Aachen.
+super_company_august_thyssen = {
+	first_name = super_company_founder_first_august
+	last_name = super_company_founder_last_thyssen
+	historical = yes
+	female = no
+	age = 18
+	culture = primary_culture
+	religion = scope:super_company_founder_religion
+	home_region = STATE_NORTH_RHINE
+	dna = random
+	interest_group = ig_intelligentsia
+	ideology = ideology_moderate
+	role = character_role_politician
+	traits = { }
+	trait_generation = { }
+}
+

@@ -1,0 +1,16 @@
+﻿# Country scope. Unlock once, using the game's own prosperous-company condition.
+super_company_education_can_unlock = {
+	is_player = yes
+	NOT = { has_variable = super_company_education_unlocked }
+	any_company = {
+		is_company_type = company_type:company_international_commercial_group
+		company_is_prosperous = yes
+	}
+}
+
+# State scope. Unlike resource development, a state modifier is safe in split regions.
+super_company_education_state_eligible = {
+	is_incorporated = yes
+	owner = { has_variable = super_company_education_unlocked }
+	NOT = { has_modifier = super_company_education_network }
+}

@@ -1,0 +1,18 @@
+﻿l_simp_chinese:
+ # Names are deliberately namespaced: do not overwrite vanilla culture-name localization.
+ super_company_founder_first_carl:0 "卡尔"
+ super_company_founder_first_henry_john:0 "亨利·约翰"
+ super_company_founder_first_alfred:0 "阿尔弗雷德"
+ super_company_founder_first_hiram_stevens:0 "海勒姆·史蒂文斯"
+ super_company_founder_first_nathan_mayer:0 "内森·迈耶"
+ super_company_founder_first_gerard:0 "杰拉德"
+ super_company_founder_first_august:0 "奥古斯特"
+ super_company_founder_last_benz:0 "本茨"
+ super_company_founder_last_heinz:0 "亨氏"
+ super_company_founder_last_nobel:0 "诺贝尔"
+ super_company_founder_last_maxim:0 "马克沁"
+ super_company_founder_last_bosch:0 "博世"
+ super_company_founder_last_rothschild:0 "罗斯柴尔德"
+ super_company_founder_last_philips:0 "飞利浦"
+ super_company_founder_last_thyssen:0 "蒂森"
+

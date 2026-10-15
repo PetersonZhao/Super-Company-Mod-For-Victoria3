@@ -1,0 +1,126 @@
+# All effects are called from the event's country scope.
+super_company_reclamation_begin = {
+	set_variable = super_company_reclamation_pending
+	set_variable = {
+		name = super_company_reclamation_last_year
+		value = year
+	}
+}
+
+# Store a stable country-local snapshot, without writing variables to any states.
+super_company_reclamation_build_state_list = {
+	clear_variable_list = super_company_reclamation_states
+	every_scope_state = {
+		limit = {
+			super_company_reclamation_state_eligible = yes
+		}
+		root = {
+			add_to_variable_list = {
+				name = super_company_reclamation_states
+				target = prev
+			}
+		}
+	}
+	set_variable = { name = super_company_reclamation_offset value = 0 }
+}
+
+# Recheck the snapshot on each page. Lost, split, or unincorporated states disappear.
+# Four visible states plus previous/next/cancel fit the standard event window.
+super_company_reclamation_prepare_page = {
+	clear_saved_scope = super_company_reclamation_state_1
+	clear_saved_scope = super_company_reclamation_state_2
+	clear_saved_scope = super_company_reclamation_state_3
+	clear_saved_scope = super_company_reclamation_state_4
+	clear_saved_scope = super_company_reclamation_selected_state
+	remove_variable = super_company_reclamation_has_next
+	set_variable = { name = super_company_reclamation_count value = 0 }
+
+	every_in_list = {
+		variable = super_company_reclamation_states
+		limit = {
+			owner = root
+			super_company_reclamation_state_eligible = yes
+		}
+		root = {
+			change_variable = { name = super_company_reclamation_count add = 1 }
+		}
+	}
+
+	# A shrinking candidate list may invalidate the current page; return to page one.
+	if = {
+		limit = {
+			var:super_company_reclamation_offset >= var:super_company_reclamation_count
+		}
+		set_variable = { name = super_company_reclamation_offset value = 0 }
+	}
+	set_variable = {
+		name = super_company_reclamation_skip
+		value = var:super_company_reclamation_offset
+	}
+	set_variable = { name = super_company_reclamation_slot value = 0 }
+
+	every_in_list = {
+		variable = super_company_reclamation_states
+		limit = {
+			owner = root
+			super_company_reclamation_state_eligible = yes
+		}
+		root = {
+			if = {
+				limit = { var:super_company_reclamation_skip > 0 }
+				change_variable = { name = super_company_reclamation_skip add = -1 }
+			}
+			else = {
+				change_variable = { name = super_company_reclamation_slot add = 1 }
+				if = {
+					limit = { var:super_company_reclamation_slot = 1 }
+					prev = { save_scope_as = super_company_reclamation_state_1 }
+				}
+				else_if = {
+					limit = { var:super_company_reclamation_slot = 2 }
+					prev = { save_scope_as = super_company_reclamation_state_2 }
+				}
+				else_if = {
+					limit = { var:super_company_reclamation_slot = 3 }
+					prev = { save_scope_as = super_company_reclamation_state_3 }
+				}
+				else_if = {
+					limit = { var:super_company_reclamation_slot = 4 }
+					prev = { save_scope_as = super_company_reclamation_state_4 }
+				}
+			}
+		}
+	}
+	if = {
+		limit = { var:super_company_reclamation_slot > 4 }
+		set_variable = super_company_reclamation_has_next
+	}
+	remove_variable = super_company_reclamation_count
+	remove_variable = super_company_reclamation_skip
+	remove_variable = super_company_reclamation_slot
+}
+
+# This guard also prevents a stale confirmation from granting land a second time.
+super_company_reclamation_apply = {
+	if = {
+		limit = { super_company_reclamation_can_confirm = yes }
+		scope:super_company_reclamation_selected_state = {
+			state_region = {
+				add_arable_land = 100
+			}
+		}
+	}
+}
+
+# Preserve last_year so that cancelling or finishing never grants another offer this year.
+super_company_reclamation_finish = {
+	remove_variable = super_company_reclamation_pending
+	remove_variable = super_company_reclamation_offset
+	remove_variable = super_company_reclamation_has_next
+	clear_variable_list = super_company_reclamation_states
+	clear_saved_scope = super_company_reclamation_state_1
+	clear_saved_scope = super_company_reclamation_state_2
+	clear_saved_scope = super_company_reclamation_state_3
+	clear_saved_scope = super_company_reclamation_state_4
+	clear_saved_scope = super_company_reclamation_selected_state
+}

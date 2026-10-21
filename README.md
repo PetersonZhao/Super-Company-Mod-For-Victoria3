@@ -107,6 +107,10 @@ An intentionally overpowered company mod for Victoria 3 1.13, with eight player-
 
 解锁标记与州修正随存档保存。解锁后，即使集团失去繁荣或解散，已授予的修正和后续补发资格仍保留；新整合或新获得的已整合州会通过整合、易主钩子及每月检查补发，未整合州不发放。分割州中的本国已整合部分同样符合条件，因为修正只作用于本国的州范围。已授予的修正没有期限，也不随州易主主动移除。已有存档更新后，若集团当前已繁荣，可在下一次每月检查解锁；更新前曾经繁荣但目前不繁荣的历史无法追溯。
 
+**首次繁荣事件：众资成业。** 玩家国家的国际商业集团首次在每月国家检查中被检测为繁荣时，若“股份公司”、“银行业”或“中央银行”尚未研究，触发一次事件 `super_company_commercial.1`。确认或超时选择默认选项后，“股份公司”增加 **8000 研究进度**（第二时代基础费用 10000 的 **80%**），“银行业”增加 **6000 研究进度**（第一时代基础费用 7500 的 **80%**），“中央银行”增加 **8000 研究进度**（第二时代基础费用 10000 的 **80%**）。三项奖励分别检查并跳过已完成的科技；与已有进度相加，足够时可完成研究，而非将进度设置为 80%。研究费用修正和跨时代惩罚可能使界面显示的实际百分比不同。
+
+事件弹出时即保存国家级一次性标记，繁荣下降、公司解散重建、存读档均不重发。三项科技均已研究时不弹事件；事件待处理期间若其中一项完成，则仅跳过该项奖励。已有存档当前已繁荣且事件尚未触发时可在下一次每月检查触发，更新前已经结束的繁荣无法追溯；已触发过事件的存档不重置标记、不补发新增奖励；现有全民教育网络独立照常生效。
+
 #### 3. 环球建设集团
 
 - **解锁技术：** 公司章程。
@@ -320,6 +324,7 @@ An intentionally overpowered company mod for Victoria 3 1.13, with eight player-
 - MTM 公司已完全删除，其仍有意义的发动机、港口商船、造船海军、军事科技、创新、公司槽和实业家效果已按职责并入八家公司，不提供旧存档兼容壳。
 - 年度项目只在独立文件中向 `on_yearly_pulse_country` 的 `on_actions` 列表追加各自钩子，不重新定义原版钩子的 `trigger` 或 `effect`。
 - 永久教育计划使用独立的 `super_company_education` 修正、触发器、效果与本地化文件，向每月国家检查、州整合和州易主钩子追加动作；不依赖临时的 `prosperity_modifier`，不覆盖原版钩子的效果。
+- 首次繁荣研究事件使用独立的 `super_company_commercial` 文件，向每月国家检查追加动作，通过国家变量防止重复；使用原版 `add_technology_progress` 分别增加 8000 点股份公司、6000 点银行业与 8000 点中央银行研究进度。
 - 年度事件未覆盖原版地图、州历史、建筑或界面，没有使用 `replace_path`，也未改动公司定义来实现这些项目。
 - 可耕土地使用 `state_region = { add_arable_land = 100 }`；资源项目使用 `change_resource_potential = { type = 对应建筑 amount = 50 }`，直接改变资源上限，不依赖吞吐量修正模拟资源。
 - 橡胶与油井通过 `bg_extraction` 继承 `capped_by_resources`。不调用 `force_resource_discovery`，避免顺带发现原有地下储量，混淆指定的 50 级增量。真实游戏中仍需核对资源上限和发现机制的交互。
@@ -354,6 +359,8 @@ An intentionally overpowered company mod for Victoria 3 1.13, with eight player-
 10. 新成立八家公司，经过一天后分别核对姓名、18 岁、知识分子、国家主流文化与国教、历史籍贯和六项特质；同日成立多家公司时不能串线。
 11. 在成立当日存读档后推进一天，检查延迟任命；解散重建和执行官继任不得再次生成创始人。等待期间解散公司，不应生成无所属公司的创始人；更新前已有公司保留现任。
 12. 国际商业集团未繁荣时不发放教育修正；繁荣后的下一次每月国家检查，为本国所有已整合州发放且每州仅一份，未整合州与外国州不发放。核对受教育机会 +50 个百分点、识字率增长 +0.10% 和永久期限；之后繁荣下降、解散公司、再次繁荣与存读档均不撤销或叠加，新整合州仍自动补发。
+
+13. 国际商业集团未繁荣或股份公司、银行业、中央银行均已研究时不弹研究事件；首次符合条件的每月检查只弹一次。以无费用修正的国家核对三项科技各由 0% 增至 80%，已有至少 20% 时足以完成；任意一项已完成时，其余未完成项仍正常获得奖励。事件未处理时经过新的月度检查、再次繁荣、解散重建与存读档均不得重复发放。科技在事件处理前自然完成时仅跳过对应奖励。
 
 真实游戏中的首任任命、头像、资源变更、发现机制、弹窗排版与存读档表现仍待验收。版本历史参见 [CHANGELOG.md](CHANGELOG.md)。
 
@@ -459,6 +466,10 @@ Supplies agricultural, livestock, fishing, food, and textile goods for populatio
 **Permanent education program: Universal Education Network.** Once the player's International Commercial Group satisfies the game's prosperous-company condition, the next monthly country check permanently unlocks the program. Every owned incorporated state automatically receives **+50 percentage points of education access and +0.10% literacy growth**, without an event choice. Each state receives one copy; monthly checks never stack it. Literacy growth uses `0.001`, an extra amount equal to twice the vanilla base modifier of `0.0005`; it does not immediately raise literacy or guarantee a flat 0.10-percentage-point monthly increase.
 
 The country unlock and state modifiers are saved. Loss of prosperity or company dissolution preserves existing awards and eligibility for future awards. Incorporation and ownership-change hooks, backed by monthly checks, award newly incorporated or acquired incorporated states; unincorporated states receive nothing. An owned incorporated portion of a split region qualifies because this modifier operates on the owned state scope. Existing awards have no expiry and are not explicitly removed on ownership changes. In updated saves, a currently prosperous group can unlock the program at the next monthly check; prosperity that ended before this feature was installed cannot be reconstructed.
+
+**First-prosperity event: Capital in Common.** The first monthly country check that detects the player's International Commercial Group as prosperous triggers `super_company_commercial.1`, provided at least one of Joint-Stock Companies, Banking, or Central Banking is not already researched. Choosing the default option, including on timeout, adds **8000 research progress** to Joint-Stock Companies (**80%** of its era-2 base cost of 10000), **6000** to Banking (**80%** of its era-1 base cost of 7500), and **8000** to Central Banking (**80%** of its era-2 base cost of 10000). Each award independently skips an already researched technology. Awards add to existing progress and can complete research; they do not set progress to 80%. Research-cost modifiers and era penalties can change the percentage shown in the interface.
+
+A country marker is saved when the event opens, preventing repeat events after prosperity loss, dissolution, re-establishment, or save/load. No event appears if all three technologies are researched; research completing while the popup is pending skips only that technology's award. Currently prosperous existing saves with an unused milestone qualify at their next monthly check; prosperity that ended before this update cannot be reconstructed. Previously triggered events retain their marker and receive no retroactive additional award. The Universal Education Network continues independently.
 
 #### 3. Global Construction Group
 
@@ -673,6 +684,7 @@ Flow: annual proposal → paginated state selection → review the deployment in
 - MTM has been removed completely. Its useful engine, port and merchant-shipping, shipbuilding and naval, military-tech, innovation, company-slot, and Industrialist effects have been redistributed by company role. No legacy-save compatibility shell is provided.
 - Independent annual-project files append their own actions to `on_yearly_pulse_country` through its `on_actions` list. They do not redefine the vanilla pulse’s `trigger` or `effect` blocks.
 - The permanent education program has separate `super_company_education` modifiers, triggers, effects, and localization. It appends actions to monthly country, state-incorporation, and state-ownership-change hooks, independently of the temporary `prosperity_modifier`, without overriding vanilla hook effects.
+- The first-prosperity research event uses separate `super_company_commercial` files, appends an action to the monthly country pulse, and uses a saved country variable to prevent repeats. Vanilla `add_technology_progress` independently adds 8000 points to Joint-Stock Companies, 6000 to Banking, and 8000 to Central Banking.
 - Annual projects do not override vanilla maps, state history, buildings, or GUI files. They do not use `replace_path` or modify company definitions to implement the projects.
 - Arable land uses `state_region = { add_arable_land = 100 }`. Resource projects use `change_resource_potential = { type = corresponding_building amount = 50 }` to change capacity directly, rather than approximating resources with throughput modifiers.
 - Rubber and oil inherit `capped_by_resources` through `bg_extraction`. The projects do not call `force_resource_discovery`, avoiding incidental discovery of existing underground reserves that could obscure the intended 50-level increase. Real engine interaction between capacity and discovery still needs validation.
@@ -707,6 +719,8 @@ Script structure, localization, and workflow simulations have been checked. They
 10. Establish all eight companies and advance one day. Check names, age 18, Intelligentsia affiliation, primary culture, state religion, historical home regions, and six traits. Simultaneous foundations must retain separate targets.
 11. Save on the establishment day, reload, and advance one day. Re-establishment and succession must not create another founder. Dissolution during the delay must not create an unattached founder; pre-existing companies retain their executives.
 12. No education award before the International Commercial Group is prosperous. At the next monthly country check, all owned incorporated states receive exactly one permanent award, with +50 percentage points of education access and +0.10% literacy growth; unincorporated and foreign states do not. Check that prosperity loss, dissolution, renewed prosperity, and save/load neither remove nor stack awards, and later incorporations still receive them.
+
+13. No research event before the International Commercial Group is prosperous or after all three of Joint-Stock Companies, Banking, and Central Banking are researched. The first eligible monthly check produces one event. Without cost modifiers, verify each technology rises from 0% to 80%, or completes from at least 20%. If any are complete, the remaining technologies must still receive their awards. Further monthly checks while pending, renewed prosperity, dissolution and re-establishment, and save/load must not duplicate it. Research completing before the option is resolved must skip only that technology's award.
 
 Actual founder appointments, portraits, resource changes, discovery interaction, popup layout, and save/load behavior still require in-game acceptance testing. See [CHANGELOG.md](CHANGELOG.md) for version history.
 

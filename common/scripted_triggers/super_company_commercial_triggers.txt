@@ -1,0 +1,14 @@
+# Country scope. Each player country receives this prosperity milestone once.
+super_company_commercial_can_start = {
+	is_player = yes
+	NOT = { has_variable = super_company_commercial_first_prosperity }
+	OR = {
+		NOT = { has_technology_researched = joint_stock_companies }
+		NOT = { has_technology_researched = banking }
+		NOT = { has_technology_researched = central_banking }
+	}
+	any_company = {
+		is_company_type = company_type:company_international_commercial_group
+		company_is_prosperous = yes
+	}
+}

@@ -1,0 +1,51 @@
+namespace = super_company_commercial
+
+# First prosperity observed at a monthly country check; existing saves qualify too.
+super_company_commercial.1 = {
+	type = country_event
+	placement = root
+	title = super_company_commercial.1.t
+	desc = super_company_commercial.1.d
+	flavor = super_company_commercial.1.f
+	event_image = { video = "europenorthamerica_london_center" }
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	duration = 3
+
+	trigger = { super_company_commercial_can_start = yes }
+	immediate = {
+		# Reserve the milestone when the popup opens, including while it is pending.
+		# This saved country flag survives dissolution, re-establishment and save/load.
+		set_variable = super_company_commercial_first_prosperity
+	}
+
+	option = {
+		name = super_company_commercial.1.a
+		default_option = yes
+		# Each technology may finish naturally while the event is open.
+		if = {
+			limit = { NOT = { has_technology_researched = joint_stock_companies } }
+			# Era 2 base cost is 10000; this adds 80% of that cost to existing progress.
+			add_technology_progress = {
+				technology = joint_stock_companies
+				progress = 8000
+			}
+		}
+		if = {
+			limit = { NOT = { has_technology_researched = banking } }
+			# Era 1 base cost is 7500; award the same 80% independently.
+			add_technology_progress = {
+				technology = banking
+				progress = 6000
+			}
+		}
+		if = {
+			limit = { NOT = { has_technology_researched = central_banking } }
+			# Era 2 base cost is 10000; award 80% independently of the other technologies.
+			add_technology_progress = {
+				technology = central_banking
+				progress = 8000
+			}
+		}
+	}
+}

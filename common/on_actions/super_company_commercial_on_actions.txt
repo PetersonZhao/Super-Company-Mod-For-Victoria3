@@ -1,0 +1,9 @@
+# Append a custom action without replacing the vanilla monthly pulse's effects.
+on_monthly_pulse_country = {
+	on_actions = { super_company_commercial_monthly }
+}
+
+super_company_commercial_monthly = {
+	trigger = { super_company_commercial_can_start = yes }
+	events = { super_company_commercial.1 }
+}

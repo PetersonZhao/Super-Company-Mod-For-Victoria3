@@ -1,5 +1,12 @@
 # Super Company - Changelog
 
+## Unreleased - First Prosperity Research Event
+
+- Added the one-time player event `super_company_commercial.1` when the International Commercial Group is first detected as prosperous at a monthly country check.
+- Its default option adds 8000 research progress to Joint-Stock Companies, 6000 to Banking, and 8000 to Central Banking, each equal to 80% of its era's base cost, stacking with existing progress. Effective percentages can differ with research-cost modifiers or era penalties.
+- A saved country marker prevents repeat events after prosperity loss, dissolution, re-establishment, or save/load. Each already-researched technology is skipped independently, including if research finishes while the event is open; no event appears if all three are complete. Existing consumed milestones are not reset.
+- Added Simplified Chinese and English event text and updated company descriptions. Currently prosperous existing saves qualify at their next monthly check; earlier prosperity cannot be reconstructed.
+
 ## Unreleased - Founding Executive Assignment Fix
 
 - Fixed founder appointment losing the company scope inside `create_character.on_created`; save the new character and assign it in the caller's event context instead.

@@ -42,6 +42,7 @@ super_company_oil.1 = {
 # Only event-local scopes name the buttons. Clear and repopulate them on every page.
 super_company_oil.2 = {
 	type = country_event
+	is_popup = yes
 	placement = root
 	title = super_company_oil.2.t
 	desc = {
@@ -173,6 +174,7 @@ super_company_oil.2 = {
 # No resource changes until the player explicitly confirms this final event.
 super_company_oil.3 = {
 	type = country_event
+	is_popup = yes
 	placement = root
 	title = super_company_oil.3.t
 	desc = {

@@ -74,7 +74,7 @@ prestige_good_edison_electricity = {
 prestige_good_marconi_radio = {
 	base_good = radios
 	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/unused/prestige_good_marconi_radio.dds"
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_marconi_radio.dds"
 }
 
 # 西里西亚煤炭 - 煤炭变体

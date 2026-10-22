@@ -21,6 +21,10 @@
  company_tech_industrial_group: "Tech Industrial Group"
  company_tech_industrial_group_desc: "A research-driven electrical group founded by Gerard Philips, advancing power, electronics, radio, and higher education."
 
+ # Employee requirements
+ building_group_bg_arts_employee_mult: "$bg_arts$ Employee Requirements"
+ building_group_bg_arts_employee_mult_desc: "A modifier to the number of employees required by Arts Academies."
+
  # Prestige Goods
  prestige_good_benz_automobiles: "Benz Automobiles"
  prestige_good_benz_engines: "Benz Engines"

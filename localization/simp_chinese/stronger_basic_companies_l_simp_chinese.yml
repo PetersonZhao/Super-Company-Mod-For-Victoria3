@@ -21,6 +21,10 @@
  company_tech_industrial_group: "科技工业集团"
  company_tech_industrial_group_desc: "由杰拉德·飞利浦创办的科研型电气集团，推动电力、电子、无线电和高等教育发展。"
 
+ # 用工修正
+ building_group_bg_arts_employee_mult: "$bg_arts$雇员需求"
+ building_group_bg_arts_employee_mult_desc: "艺术学院所需雇员数量的修正。"
+
  # 名贵商品
  prestige_good_benz_automobiles: "奔驰汽车"
  prestige_good_benz_engines: "奔驰发动机"

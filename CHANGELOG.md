@@ -1,5 +1,42 @@
 # Super Company - Changelog
 
+## Unreleased - Arts Academy Employee Requirements
+
+- Added -75% Arts Academy employee requirements to the Tech Industrial Group's prosperity bonuses, using the existing `bg_arts` building group.
+- Added modifier display settings and Chinese/English localization, and updated the company effect tables.
+
+## Unreleased - British Dyes Prestige Good
+
+- Added `prestige_good_british_dyes`, based on `dye`, with the existing `british_dyes.dds` icon and the standard 0.1 prestige bonus.
+- Replaced the Petrochemical Giant's German Aniline selection with British Dyes, preserving its four prestige goods and vanilla German Aniline elsewhere. The current mod combination has two prestige dye variants.
+- Added the inline text icon, six-language localization, and Chinese/English documentation with a Science Museum source for the historical British dye industry.
+- Changes are confined to this mod; vanilla game files are preserved.
+
+## Unreleased - Commercial Prestige Rum Update
+
+- Changed the International Commercial Group's rum prestige good to vanilla `prestige_good_bacardi_rum`, preserving its vanilla name and icon and the company's twelve prestige goods.
+- Removed the mod's standalone `prestige_good_liquor_rum` definition and updated the Chinese and English company documentation.
+- Changes are confined to this mod; vanilla game files are preserved.
+
+## Unreleased - Automotive Prestige Automobiles Compatibility Fix
+
+- Changed Global Automotive Industries' automobile prestige good to vanilla `prestige_good_ford_automobiles`, preserving its vanilla name and icon.
+- Removed the mod's standalone `prestige_good_benz_automobiles` definition. Vanilla's two automobile variants plus the current Cheat Menu Pro's automobile variant now total three, matching the engine limit.
+- Compatibility checks also found that Cheat Menu Pro adds `prestige_good_sakuya_magic_broom` as a fourth engine variant. This separate conflict is documented for the combined playset.
+- Updated the Chinese and English company documentation. Changes are confined to this mod; vanilla game files and Cheat Menu Pro files are preserved.
+
+## Unreleased - Automotive Prestige Engines Fix
+
+- Changed Global Automotive Industries' engine prestige good to vanilla `prestige_good_schichau_engines`, preserving its vanilla name and icon.
+- Removed the mod's standalone `prestige_good_benz_engines` definition so vanilla plus this mod have three registered engine prestige variants, matching the engine limit.
+- Updated the Chinese and English company documentation. Changes are confined to this mod; vanilla game files are preserved.
+
+## Unreleased - Military Prestige Small Arms Fix
+
+- Changed the Military Industrial Complex's small-arms prestige good to vanilla `prestige_good_generic_small_arms`, preserving its vanilla name and icon.
+- Removed the mod's standalone `prestige_good_mauser_rifles` definition so small arms have three registered prestige variants, matching the engine limit.
+- Changes are confined to this mod; vanilla game files and other companies' prestige-good definitions are preserved.
+
 ## Unreleased - First Prosperity Research Event
 
 - Added the one-time player event `super_company_commercial.1` when the International Commercial Group is first detected as prosperous at a monthly country check.

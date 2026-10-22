@@ -1,0 +1,9 @@
+# Display settings for the existing arts building-group employee modifier.
+building_group_bg_arts_employee_mult = {
+	decimals = 1
+	color = bad
+	percent = yes
+	game_data = {
+		ai_value = 0
+	}
+}

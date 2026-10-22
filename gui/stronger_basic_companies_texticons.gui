@@ -92,6 +92,16 @@ texticon = {
 }
 
 texticon = {
+	icon = prestige_good_british_dyes
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/british_dyes.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
 	icon = prestige_good_standard_oil
 	iconsize = {
 		texture = "gfx/interface/icons/goods_icons/prestige_goods/SOC_crown_oil.dds"

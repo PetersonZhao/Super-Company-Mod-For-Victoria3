@@ -7,8 +7,8 @@ company_global_automotive_industries = {
 	flavored_company = yes
 
 	possible_prestige_goods = {
-		prestige_good_benz_automobiles
-		prestige_good_benz_engines
+		prestige_good_ford_automobiles
+		prestige_good_schichau_engines
 		prestige_good_michelin_rubber
 	}
 
@@ -62,7 +62,7 @@ company_international_commercial_group = {
 		prestige_good_generic_clothes
 		prestige_good_savile_row_suits
 		prestige_good_campbell_soup
-		prestige_good_liquor_rum
+		prestige_good_bacardi_rum
 		prestige_good_blue_mountain_coffee
 		prestige_good_generic_grain
 		prestige_good_generic_fish
@@ -223,7 +223,7 @@ company_military_industrial_complex = {
 	flavored_company = yes
 
 	possible_prestige_goods = {
-		prestige_good_mauser_rifles
+		prestige_good_generic_small_arms
 		prestige_good_krupp_guns
 		prestige_good_winchester_ammunition
 		prestige_good_baltimore_clippers
@@ -295,7 +295,7 @@ company_petrochemical_giant = {
 	possible_prestige_goods = {
 		prestige_good_standard_oil
 		prestige_good_generic_fertilizer
-		prestige_good_german_aniline
+		prestige_good_british_dyes
 		prestige_good_prr_quick_transport
 	}
 
@@ -469,6 +469,7 @@ company_tech_industrial_group = {
 		building_power_plant_throughput_add = 1.5
 		building_electrics_industry_throughput_add = 1.25
 		building_art_academy_throughput_add = 1.0
+		building_group_bg_arts_employee_mult = -0.75
 		building_university_throughput_add = 1.0
 	}
 

@@ -1,19 +1,5 @@
 ﻿# 强化基础公司名贵商品
 
-# 梅赛德斯汽车 - 汽车变体
-prestige_good_benz_automobiles = {
-	base_good = automobiles
-	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_benz_automobiles.dds"
-}
-
-# 奔驰发动机 - 发动机变体
-prestige_good_benz_engines = {
-	base_good = engines
-	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_benz_engines.dds"
-}
-
 # 米其林橡胶 - 橡胶变体
 prestige_good_michelin_rubber = {
 	base_good = rubber
@@ -49,18 +35,18 @@ prestige_good_tiffany_glass = {
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_tiffany_glass.dds"
 }
 
-# 毛瑟步枪 - 轻武器变体
-prestige_good_mauser_rifles = {
-	base_good = small_arms
-	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_mauser_rifles.dds"
-}
-
 # 诺贝尔炸药 - 炸药变体
 prestige_good_nobel_explosives = {
 	base_good = explosives
 	prestige_bonus = 0.1
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_nobel_explosives.dds"
+}
+
+# 英国染料 - 染料变体
+prestige_good_british_dyes = {
+	base_good = dye
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/british_dyes.dds"
 }
 
 # 标准石油 - 石油变体
@@ -117,13 +103,6 @@ prestige_good_prr_quick_transport = {
 	base_good = transportation
 	prestige_bonus = 0.1
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/PRR_quick_transport.dds"
-}
-
-# 朗姆酒 - 烈酒变体
-prestige_good_liquor_rum = {
-	base_good = liquor
-	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/rum.dds"
 }
 
 # 巴尔的摩快帆船 - 帆船变体

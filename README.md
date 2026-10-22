@@ -72,7 +72,7 @@ An intentionally overpowered company mod for Victoria 3 1.13, with eight player-
 | 陆军攻击力 | +10% |
 | 州贸易优势 | +30% |
 
-**声望商品：** 奔驰汽车、奔驰发动机、米其林橡胶，共 3 种。
+**声望商品：** 福特汽车（原版）、希肖发动机（原版）、米其林橡胶，共 3 种。汽车和发动机使用原版商品 key、名称和图标。搭配当前版本的 Cheat Menu Pro 时，汽车的名贵变体总数为 3 种，符合引擎上限。Cheat Menu Pro 另增一种发动机名贵变体，使发动机合计 4 种，仍有兼容性冲突。
 
 产业链为橡胶 → 发动机 → 汽车，用更强的上游供给支撑汽车产能，并吸收旧 MTM 的发动机功能。
 
@@ -99,7 +99,7 @@ An intentionally overpowered company mod for Victoria 3 1.13, with eight player-
 | 移民吸引力 | +20% |
 | 州贸易优势 | +20% |
 
-**声望商品：** 名牌服装、京都和服、坎贝尔汤品、朗姆酒、蓝山咖啡、优质谷物、精选鱼类、海岛棉、高纯鸦片、阿萨姆茶、雪茄、高速商船，共 12 种。
+**声望商品：** 名牌服装、京都和服、坎贝尔汤品、百加得朗姆酒（原版）、蓝山咖啡、优质谷物、精选鱼类、海岛棉、高纯鸦片、阿萨姆茶、雪茄、高速商船，共 12 种。
 
 承担农牧渔业、食品、纺织等人口消费品供给，以及港口与商船物流；旧 MTM 的港口和商船功能并入本公司。
 
@@ -146,7 +146,7 @@ An intentionally overpowered company mod for Victoria 3 1.13, with eight player-
 | 武装部队人口吸引力 | +30% |
 | 军事科技扩散 | +60% |
 
-**声望商品：** 毛瑟步枪、克虏伯炮、温彻斯特弹药、巴尔的摩快帆船、克莱德造班轮，共 5 种。
+**声望商品：** 强力轻武器（原版通用名贵轻武器）、克虏伯炮、温彻斯特弹药、巴尔的摩快帆船、克莱德造班轮，共 5 种。轻武器使用原版商品 key、名称和图标，使轻武器的名贵变体总数保持在引擎的 3 种上限内。
 
 供应轻武器、火炮、弹药与舰船，并接收旧 MTM 的造船、海军和军事科技功能。1.13 已合并民船与军舰造船厂，脚本统一使用 `building_shipyard`。
 
@@ -165,7 +165,9 @@ An intentionally overpowered company mod for Victoria 3 1.13, with eight player-
 | 基础设施行业雇员需求 | -75% |
 | 州基础设施 | +50% |
 
-**声望商品：** 标准石油、浓缩肥料、德意志苯胺、高速铁路，共 4 种。
+**声望商品：** 标准石油、浓缩肥料、英国染料、高速铁路，共 4 种。英国染料使用自有商品 `prestige_good_british_dyes` 和 `british_dyes.dds` 图标，绑定基础商品 `dye`。原版德意志苯胺保留，当前模组组合下染料名贵变体共 2 种。
+
+英国染料以英国合成染料工业为背景：British Dyes Limited 成立于 1915 年，1919 年与 Levinstein Limited 合并组建 British Dyestuffs Corporation；[科学博物馆保存的约 1920 年染料样品柜](https://collection.sciencemuseumgroup.org.uk/objects/co9224)提供了实物依据。模组沿用公司的名贵商品机制，解锁时间由游戏中的公司条件决定。
 
 连接石油 → 化工与合成材料，并支持铁路运输，缓解后期石油、化肥、炸药和染料短缺。铁路仍需依靠等级提供基础设施；建设效率和低雇员需求支持更快、更便宜的大规模路网，降低工资成本，避免单级运输力爆量导致铁路亏损。
 
@@ -203,6 +205,7 @@ An intentionally overpowered company mod for Victoria 3 1.13, with eight player-
 | 发电厂吞吐量 | +150% |
 | 电气工业吞吐量 | +125% |
 | 艺术学院与大学吞吐量（各） | +100% |
+| 艺术学院雇员需求 | -75% |
 | 城市中心吞吐量 | +20% |
 | 最大公司数 | +1 |
 | 创新上限 | +20 |
@@ -432,7 +435,7 @@ This README follows the current scripts where they differ from the earlier stand
 | Army offense | +10% |
 | State trade advantage | +30% |
 
-**Prestige goods:** Benz Automobiles, Benz Engines, Michelin Rubber (3 goods).
+**Prestige goods:** Ford Automobiles (vanilla), Schichau Engines (vanilla), Michelin Rubber (3 goods). Automobiles and engines use vanilla good keys, names, and icons. With the current version of Cheat Menu Pro, there are three prestige automobile variants, within the engine limit. Cheat Menu Pro also adds a prestige engine variant, bringing engines to four; that compatibility conflict remains.
 
 The rubber → engines → automobiles chain uses stronger upstream supply to support automotive output. It also absorbs the former MTM company’s engine role.
 
@@ -459,7 +462,7 @@ The rubber → engines → automobiles chain uses stronger upstream supply to su
 | Migration attraction | +20% |
 | State trade advantage | +20% |
 
-**Prestige goods:** Designer Clothes, Kyoto Kimonos, Campbell Soup, Rum, Blue Mountain Coffee, Fine Grain, Select Fish, Sea Island Cotton, Pure Opium, Assam Tea, Cigars, Swift Merchant Marine (12 goods).
+**Prestige goods:** Designer Clothes, Kyoto Kimonos, Campbell Soup, Bacardi Rum (vanilla), Blue Mountain Coffee, Fine Grain, Select Fish, Sea Island Cotton, Pure Opium, Assam Tea, Cigars, Swift Merchant Marine (12 goods).
 
 Supplies agricultural, livestock, fishing, food, and textile goods for population consumption, together with port and merchant-marine logistics. It absorbs MTM’s port and merchant shipping functions.
 
@@ -506,7 +509,7 @@ Coordinates construction inputs across steel, glass, explosives, furniture, and 
 | Armed Forces pop attraction | +30% |
 | Military technology spread | +60% |
 
-**Prestige goods:** Mauser Rifles, Krupp Guns, Winchester Ammunition, Baltimore Clippers, Clyde-Built Liners (5 goods).
+**Prestige goods:** High-powered Small Arms (vanilla generic prestige small arms), Krupp Guns, Winchester Ammunition, Baltimore Clippers, Clyde-Built Liners (5 goods). Small arms use the vanilla good key, name, and icon, keeping the number of prestige small-arms variants within the engine's limit of three.
 
 Supplies small arms, artillery, ammunition, and ships, and absorbs MTM’s shipbuilding, naval, and military technology roles. Version 1.13 combines civilian and military shipyards, so the script uses `building_shipyard`.
 
@@ -525,7 +528,9 @@ Supplies small arms, artillery, ammunition, and ships, and absorbs MTM’s shipb
 | Infrastructure building-group employee requirements | -75% |
 | State infrastructure | +50% |
 
-**Prestige goods:** Standard Oil, Enriched Fertilizer, German Aniline, High-Speed Rail (4 goods).
+**Prestige goods:** Standard Oil, Enriched Fertilizer, British Dyes, High-Speed Rail (4 goods). British Dyes uses the custom good `prestige_good_british_dyes`, the `british_dyes.dds` icon, and the base good `dye`. Vanilla German Aniline is preserved; the current mod combination has two prestige dye variants.
+
+British Dyes draws on Britain's synthetic dye industry: British Dyes Limited was founded in 1915 and merged with Levinstein Limited in 1919 to form British Dyestuffs Corporation. The [Science Museum's dye sample cabinet from circa 1920](https://collection.sciencemuseumgroup.org.uk/objects/co9224) provides surviving examples. In the mod, availability follows the company's normal prestige-good conditions.
 
 Connects oil to chemicals and synthetic materials while supporting rail transport, addressing late-game oil, fertilizer, explosives, and dye shortages. Railways still need levels to supply infrastructure. Faster construction and lower staffing support a larger, cheaper network with lower wage costs, avoiding the losses caused by excessive transport output per railway level.
 
@@ -563,6 +568,7 @@ Handles the timber → paper and tools chain, finance, and investment, including
 | Power plant throughput | +150% |
 | Electrics industry throughput | +125% |
 | Arts academy and university throughput, each | +100% |
+| Arts academy employee requirements | -75% |
 | Urban center throughput | +20% |
 | Maximum companies | +1 |
 | Innovation cap | +20 |

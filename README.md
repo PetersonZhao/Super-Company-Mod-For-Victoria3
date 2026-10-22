@@ -213,7 +213,7 @@ An intentionally overpowered company mod for Victoria 3 1.13, with eight player-
 | 官僚机构产出 | +20% |
 | 影响力 | +30% |
 
-**声望商品：** 爱迪生电力、马可尼无线电、大战略游戏，共 3 种。
+**声望商品：** 爱迪生电力、费兰蒂电子设备（原版）、大战略游戏，共 3 种。无线电使用原版商品 `prestige_good_ferranti_radios` 的名称和图标，使当前模组组合下的无线电名贵变体总数保持在引擎的 3 种上限内。
 
 连接电力 → 电气，并支持大学、创新与行政能力；吸收旧 MTM 的每周创新和额外公司槽。发动机归汽车集团负责，避免职责重叠。
 
@@ -576,7 +576,7 @@ Handles the timber → paper and tools chain, finance, and investment, including
 | Bureaucracy output | +20% |
 | Influence | +30% |
 
-**Prestige goods:** Edison Electricity, Marconi Radio, Grand Strategy Games (3 goods).
+**Prestige goods:** Edison Electricity, Ferranti Radios (vanilla), Grand Strategy Games (3 goods). Radios use the vanilla good `prestige_good_ferranti_radios`, including its name and icon, keeping the current mod combination's prestige radio variants within the engine's limit of three.
 
 Connects power to electrical industry and supports universities, innovation, and administration. It absorbs MTM’s weekly innovation and additional company slot, while engines belong to the automotive company.
 

@@ -424,7 +424,7 @@ company_tech_industrial_group = {
 
 	possible_prestige_goods = {
 		prestige_good_edison_electricity
-		prestige_good_marconi_radio
+		prestige_good_ferranti_radios
 		prestige_good_grand_strategy_games
 	}
 

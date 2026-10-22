@@ -1,5 +1,17 @@
 # Super Company - Changelog
 
+## Unreleased - Unused Prestige Text Icon Cleanup
+
+- Removed five unused inline text icon registrations for Benz Automobiles, Benz Engines, Mauser Rifles, Marconi Radio, and Rum after their custom prestige-good definitions were retired.
+- Retained all seventeen active custom prestige-good text icons and their existing textures. This removes four stale texture lookups recorded in the previous game log.
+- Updated the prestige-good audit report to record the cleanup. Changes are confined to this mod; vanilla game files and stored artwork are preserved.
+
+## Unreleased - Tech Prestige Radios Fix
+
+- Changed the Tech Industrial Group's radio prestige good to vanilla `prestige_good_ferranti_radios`, preserving its vanilla name and icon and the company's three prestige goods.
+- Removed the mod's standalone `prestige_good_marconi_radio` definition. The current mod combination has three registered prestige radio variants, matching the engine limit.
+- Updated the Chinese and English company documentation. Changes are confined to this mod; vanilla game files are preserved.
+
 ## Unreleased - Arts Academy Employee Requirements
 
 - Added -75% Arts Academy employee requirements to the Tech Industrial Group's prosperity bonuses, using the existing `bg_arts` building group.

@@ -70,13 +70,6 @@ prestige_good_edison_electricity = {
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_edison_electricity.dds"
 }
 
-# 马可尼无线电 - 无线电变体
-prestige_good_marconi_radio = {
-	base_good = radios
-	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_marconi_radio.dds"
-}
-
 # 西里西亚煤炭 - 煤炭变体
 prestige_good_silesian_coal = {
 	base_good = coal

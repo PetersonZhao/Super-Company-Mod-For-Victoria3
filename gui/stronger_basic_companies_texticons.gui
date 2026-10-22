@@ -2,26 +2,6 @@
 # Keep each icon identifier and texture in sync with common/prestige_goods.
 
 texticon = {
-	icon = prestige_good_benz_automobiles
-	iconsize = {
-		texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_benz_automobiles.dds"
-		size = { 25 25 }
-		offset = { 0 7 }
-		fontsize = 18
-	}
-}
-
-texticon = {
-	icon = prestige_good_benz_engines
-	iconsize = {
-		texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_benz_engines.dds"
-		size = { 25 25 }
-		offset = { 0 7 }
-		fontsize = 18
-	}
-}
-
-texticon = {
 	icon = prestige_good_michelin_rubber
 	iconsize = {
 		texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_michelin_rubber.dds"
@@ -65,16 +45,6 @@ texticon = {
 	icon = prestige_good_tiffany_glass
 	iconsize = {
 		texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_tiffany_glass.dds"
-		size = { 25 25 }
-		offset = { 0 7 }
-		fontsize = 18
-	}
-}
-
-texticon = {
-	icon = prestige_good_mauser_rifles
-	iconsize = {
-		texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_mauser_rifles.dds"
 		size = { 25 25 }
 		offset = { 0 7 }
 		fontsize = 18
@@ -132,16 +102,6 @@ texticon = {
 }
 
 texticon = {
-	icon = prestige_good_marconi_radio
-	iconsize = {
-		texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_marconi_radio.dds"
-		size = { 25 25 }
-		offset = { 0 7 }
-		fontsize = 18
-	}
-}
-
-texticon = {
 	icon = prestige_good_silesian_coal
 	iconsize = {
 		texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_silesian_coal.dds"
@@ -175,16 +135,6 @@ texticon = {
 	icon = prestige_good_prr_quick_transport
 	iconsize = {
 		texture = "gfx/interface/icons/goods_icons/prestige_goods/PRR_quick_transport.dds"
-		size = { 25 25 }
-		offset = { 0 7 }
-		fontsize = 18
-	}
-}
-
-texticon = {
-	icon = prestige_good_liquor_rum
-	iconsize = {
-		texture = "gfx/interface/icons/goods_icons/prestige_goods/rum.dds"
 		size = { 25 25 }
 		offset = { 0 7 }
 		fontsize = 18
